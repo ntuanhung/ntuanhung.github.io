@@ -810,6 +810,9 @@ section #title p {
     float: none;
     display: block;
   }
+  #header nav{
+    position: none;
+  }
 }
 @media print, screen and (max-width: 480px) {
   #header {
@@ -823,4 +826,5 @@ section #title p {
   nav {
     display: none;
   }
+  
 }
