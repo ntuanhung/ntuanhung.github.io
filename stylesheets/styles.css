@@ -795,7 +795,7 @@ section #title p {
   float: right;
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 768px) {
   .credits {
     display: block;
     width: 100%;
