@@ -713,6 +713,8 @@ dt {
   margin: 0 auto;
   padding: 0 10px;
   margin: 6px auto;
+  position: absolute;
+  right: 350px;
 }
 #header nav li {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
