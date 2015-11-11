@@ -813,6 +813,9 @@ section #title p {
   #header nav{
     position: none;
   }
+  #header nav li:first-child{
+  position:none;
+}
 }
 @media print, screen and (max-width: 480px) {
   #header {
