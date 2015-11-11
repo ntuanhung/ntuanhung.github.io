@@ -726,8 +726,9 @@ dt {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
-#header nav li:first-child(){
-  left:0;
+#header nav li:first-child{
+  position:absolute;
+  left:-370px;
 }
 #header nav li a {
   color: white;
