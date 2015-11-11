@@ -718,10 +718,10 @@ dt {
 }
 #header nav li {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   list-style: none;
   display: inline;
-  color: #696969;
+  color: white;
   line-height: 50px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 18px;
