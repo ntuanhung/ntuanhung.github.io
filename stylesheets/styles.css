@@ -811,10 +811,10 @@ section #title p {
     display: block;
   }
   #header nav{
-    position: none;
+    position: initial;
   }
   #header nav li:first-child{
-    position:none;
+    position: initial;
   }
 }
 @media print, screen and (max-width: 480px) {
