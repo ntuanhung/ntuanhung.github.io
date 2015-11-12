@@ -731,6 +731,8 @@ dt {
 #header nav li a.active{
   padding-bottom: 5px;
   border-bottom: 1px solid orange;
+  transition: 0.2s ease-in-out;
+
 }
 
 #header nav li a {
@@ -744,9 +746,6 @@ dt {
 }
 #header nav li a:hover {
   color: orange;
-  padding-bottom: 5px;
-  border-bottom: 1px solid orange;
-  transition: 0.2s ease-in-out;
 }
 
 #header nav li a img{
