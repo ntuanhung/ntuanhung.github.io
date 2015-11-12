@@ -715,7 +715,7 @@ dt {
   padding: 0 10px;
   margin: 6px auto;
   position: absolute;
-  right: 300px;
+  left: 45%;
 }
 #header nav li {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -820,9 +820,7 @@ section #title p {
     float: none;
     display: block;
   }
-  #header nav{
-    position: initial;
-  }
+
     #header nav li a img{
     display: block;
     margin-top:4px;
@@ -833,7 +831,9 @@ section #title p {
   }
 }
 @media print, screen and (max-width: 480px) {
-  
+    #header nav{
+    position: initial;
+  }
 
   section {
     margin-top: 40px;
