@@ -50,7 +50,7 @@
     	$('#header nav li a').click(
 
 	function(e) {
- 
+ e.stopPropagation; 
     $(this).closest('nav').find('.active').removeClass('active');
     $(this).parent().addClass('active');
 });
