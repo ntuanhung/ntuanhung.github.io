@@ -47,14 +47,22 @@
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
     <script>
-    	$('#header nav li a').click(
-
-	function(e) {
-    $(this).closest('nav').find('.active').removeClass('active');
-    $(this).parent().addClass('active');
-    e.preventDefault(); // prevent the default action
-    e.stopPropagation;
+     $(function () {
+    setNavigation();
 });
+
+function setNavigation() {
+    var path = window.location.pathname;
+    path = path.replace(/\/$/, "");
+    path = decodeURIComponent(path);
+
+    $("#header nav a").each(function () {
+        var href = $(this).attr('href');
+        if (path.substring(0, href.length) === href) {
+            $(this).closest('li').addClass('active');
+        }
+    });
+}
     </script>
   </body>
 </html>
