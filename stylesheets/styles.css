@@ -803,6 +803,9 @@ section #title p {
 }
 
 @media print, screen and (max-width: 768px) {
+  #header {
+    margin-top: -20px;
+  }
   .credits {
     display: block;
     width: 100%;
@@ -829,9 +832,7 @@ section #title p {
   }
 }
 @media print, screen and (max-width: 480px) {
-  #header {
-    margin-top: -20px;
-  }
+  
 
   section {
     margin-top: 40px;
