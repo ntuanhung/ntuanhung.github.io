@@ -47,11 +47,13 @@
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
     <script>
-    	$(function(){
-    		$('#header nav li a').on('click', function(){
-    			$(this).addClass('active').siblings().removeClass('active');
-		});
-    	});
+    	$(function() {
+    		$("#header nav li a").click(function(){
+		$(".active").removeClass("active");
+      //"this" is the element clicked on
+     		$(this).addClass("active");
+ });
+ });
     </script>
   </body>
 </html>
