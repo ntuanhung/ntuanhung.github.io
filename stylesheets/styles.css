@@ -825,6 +825,7 @@ section #title p {
   }
     #header nav li a img{
     display: block;
+    margin-top:4px;
   }
 
   #header nav li a span{
