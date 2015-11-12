@@ -817,6 +817,9 @@ section #title p {
     float: none;
     display: block;
   }
+  #header nav{
+    position: initial;
+  }
     #header nav li a img{
     display: block;
   }
