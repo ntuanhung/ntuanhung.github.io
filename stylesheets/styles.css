@@ -728,7 +728,7 @@ dt {
   font-size: 18px;
 }
 
-#header nav li .active{
+#header nav li.active{
   padding-bottom: 5px;
   border-bottom: 1px solid orange;
   transition: 0.2s ease-in-out;
