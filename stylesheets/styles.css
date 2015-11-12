@@ -740,6 +740,15 @@ dt {
 #header nav li a:hover {
   color: orange;
 }
+
+#header nav li a img{
+  display: none;
+}
+
+#header nav li a span{
+  display: block;
+}
+
 #header nav li.fork {
   margin-left: 0px;
 }
@@ -824,7 +833,11 @@ section #title p {
     margin-top: 40px;
   }
 
-  nav {
+  #header nav li a img{
+    display: block;
+  }
+
+  #header nav li a span{
     display: none;
   }
   
