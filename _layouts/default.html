@@ -27,7 +27,7 @@
       <div class="wrapper">
 	<div id="header">
         <nav>
-       	  <li class="active"><a href="/"><img src="/images/menu/ico_home.png" width="25" alt="Home"> <span>Home</span></a></li>         
+       	  <li class=""><a href="/"><img src="/images/menu/ico_home.png" width="25" alt="Home"> <span>Home</span></a></li>         
        	  <li class=""><a href="/blog"><img src="/images/menu/ico-blog.png" width="23" alt="Blog"><span>Blog</span></a></li>	
 	  <li class=""><a href="/about"><img src="/images/menu/ico-about-me.png" width="25" alt="About"><span>About</span></a></li>
           <li class=""><a href="https://github.com/ntuanhung"><img src="/images/menu/ico-github.png" width="25" alt="Github"><span>My GitHub</span></a></li>
@@ -48,21 +48,10 @@
     
     <script>
      $(function () {
-    setNavigation();
+      $('#header nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
 });
 
-function setNavigation() {
-    var path = window.location.pathname;
-    path = path.replace(/\/$/, "");
-    path = decodeURIComponent(path);
 
-    $("#header nav a").each(function () {
-        var href = $(this).attr('href');
-        if (path.substring(0, href.length) === href) {
-            $(this).closest('li').addClass('active');
-        }
-    });
-}
     </script>
   </body>
 </html>
