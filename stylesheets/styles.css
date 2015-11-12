@@ -817,11 +817,12 @@ section #title p {
     float: none;
     display: block;
   }
-  #header nav{
-    position: initial;
+    #header nav li a img{
+    display: block;
   }
-  #header nav li:first-child{
-    position: initial;
+
+  #header nav li a span{
+    display: none;
   }
 }
 @media print, screen and (max-width: 480px) {
@@ -833,12 +834,6 @@ section #title p {
     margin-top: 40px;
   }
 
-  #header nav li a img{
-    display: block;
-  }
 
-  #header nav li a span{
-    display: none;
-  }
   
 }
