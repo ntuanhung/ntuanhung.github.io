@@ -47,12 +47,14 @@
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
     <script>
-    	$(function() {
-		$('header nav li a').click(function() {
-	 	$('header nav li.active').removeClass('active');
-    		$(this).closest('li').addClass('active');
-		});
-	 });
+    	$('#header nav li a').click(
+
+	function(e) {
+    e.preventDefault(); // prevent the default action
+    e.stopPropagation; // stop the click from bubbling
+    $(this).closest('nav').find('.active').removeClass('active');
+    $(this).parent().addClass('active');
+});
     </script>
   </body>
 </html>
