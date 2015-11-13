@@ -3,7 +3,8 @@ layout: post
 title: "Useful links"
 date: 2015-11-12
 ---
-[2015/11/]
+2015/11 Links
+
 * Single Artificial Neural Taught to Recognition Hundreds of Patterns [here](http://www.technologyreview.com/view/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/)
 * Detail about Markdown from github [here](https://guides.github.com/features/mastering-markdown/)
 * Compare Dark UI vs Light UI for website/IDE/...?
