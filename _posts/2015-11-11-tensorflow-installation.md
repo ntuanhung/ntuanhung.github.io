@@ -11,3 +11,5 @@ date: 2015-11-11
   * 
 3. Performance
   * Compare different framework/library of deep learning by @soumith at [here](https://github.com/soumith/convnet-benchmarks)
+  * Details of benchmark for Tensorflow and Torch [here](https://github.com/soumith/convnet-benchmarks/issues/66)
+from @soumith
