@@ -3,4 +3,11 @@ layout: post
 title: "Tensorflow Installation"
 date: 2015-11-11
 ---
-Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+1. Ubuntu Server tips
+  * Monitor Linux Performance using commandline with top, sudo iotop, nvidia-smi [here](http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/)
+  * 
+2. TensorFlow
+  * Tutorials [here](http://tensorflow.org/tutorials)
+  * 
+3. Performance
+  * Compare different framework/library of deep learning by @soumith at [here](https://github.com/soumith/convnet-benchmarks)
