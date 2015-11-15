@@ -48,13 +48,7 @@
     
     <script>
      $(function () {
-     	console.log(location.pathname.split("/")[1]);
-     	if(location.pathname.split("/")[1] !==' '){
         $('#header nav li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-     	}
-     	else{
-     		$('#header nav li a:first-child').addClass('active');
-     	}
 	});
 
 
