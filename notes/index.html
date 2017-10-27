@@ -10,7 +10,7 @@ title: My Notes
 </ul>
 
 
-<div class="article">
+
     <h3 class="title">{{ page.title }}</h3>
     <ul class="notes">
     {% assign categories_list = site.notes %}
@@ -21,7 +21,6 @@ title: My Notes
     {% endfor %}
     </ul>
 
-<div class="article">
 {% for category in site.categories %} 
   <h2  class="article-year" id="{{ category[0] }}-ref" data-year="&diams;">{{ category[0] | join: "/" }}</h2>
   <ul style="list-style: none">
@@ -36,5 +35,3 @@ title: My Notes
    
   </ul>
 {% endfor %}
-</div>
-</div>
