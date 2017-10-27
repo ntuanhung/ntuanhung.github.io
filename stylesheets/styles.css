@@ -144,6 +144,12 @@ textarea {
   font-family: sans-serif;
 }
 
+div#toc {
+    padding: 10px;
+    border: 1px solid #aaa;
+    display: inline-block !important;
+}
+
 /*
  * Addresses margins handled incorrectly in IE6/7
  */
