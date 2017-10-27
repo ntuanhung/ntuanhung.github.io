@@ -3,7 +3,7 @@ layout: default
 title: My Notes
 ---
 <h1>{{ page.title }}</h1>
-
+<div class="article">
 <ul class="notes">
 {% assign categories_list = site.categories %}
 {% for category in categories_list %}
@@ -12,7 +12,7 @@ title: My Notes
     </a></li>
 {% endfor %}
 </ul>
-
+<div class="article">
 {% for category in site.categories %} 
   <h2  class="article-year" id="{{ category[0] }}-ref" data-year="&diams;">{{ category[0] | join: "/" }}</h2>
   <ul style="list-style: none">
@@ -27,3 +27,5 @@ title: My Notes
    
   </ul>
 {% endfor %}
+</div>
+</div>
