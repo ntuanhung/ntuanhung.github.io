@@ -5,7 +5,7 @@ title: My Notes
 <h1>{{ page.title }}</h1>
 
 <ul class="notes">
-{% assign categories_list = site.notes %}
+{% assign categories_list = site.categories %}
 {% for category in categories_list %}
     <li class="categories-item"><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
         {{ category[0] | join: "/" }}
@@ -13,7 +13,7 @@ title: My Notes
 {% endfor %}
 </ul>
 
-{% for category in site.notes %} 
+{% for category in site.categories %} 
   <h2  class="article-year" id="{{ category[0] }}-ref" data-year="&diams;">{{ category[0] | join: "/" }}</h2>
   <ul style="list-style: none">
     {% assign pages_list = category[1] %}  
