@@ -617,13 +617,23 @@ strong {
   position: relative;
   padding: 0 20px;
 }
-.main .categories .categories-item {
-  list-style-type: none;
-  background: #99b9c4;
-  color: #fff;
+
+.main .article .notes {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+    padding-left: 0;
 }
-.main .categories .categories-item a {
-  color: #fff;
+.main .notes .categories-item {
+    list-style-type: none;
+    background: #99b9c4;
+    color: #fff;
+    margin-right: 10px;
+    padding: 3px 20px;
+    float: left;
+}
+.main .notes .categories-item a {
+    color: #fff;
 }
   
 section img {
