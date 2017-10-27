@@ -617,7 +617,15 @@ strong {
   position: relative;
   padding: 0 20px;
 }
-
+.main .categories .categories-item {
+  list-style-type: none;
+  background: #99b9c4;
+  color: #fff;
+}
+.main .categories .categories-item a {
+  color: #fff;
+}
+  
 section img {
   max-width: 100%;
 }
