@@ -3,7 +3,7 @@ layout: default
 title: My Notes
 ---
 <h1>{{ page.title }}</h1>
-<!–– 
+<!--
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> $ <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
@@ -30,7 +30,7 @@ title: My Notes
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if group == null or group == node.group %}
-            <li style="background:#F2EEEC; padding:5px; margin:3px 0"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+            <li style="background:#454545; padding:5px; margin:3px 0"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
