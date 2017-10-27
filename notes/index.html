@@ -14,14 +14,14 @@ title: My Notes
 
     <h3 class="title">{{ page.title }}</h3> 
 -->
-    <ul class="notes">
-    {% assign categories_list = site.notes %}
-    {% for category in categories_list %}
-        <li class="categories-item"><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
-            {{ category[0] | join: "/" }}
-        </a></li>
-    {% endfor %}
-    </ul>
+<ul class="notes">
+{% assign categories_list = site.notes %}
+{% for category in categories_list %}
+    <li class="categories-item"><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
+        {{ category[0] | join: "/" }}
+    </a></li>
+{% endfor %}
+</ul>
 
 {% for category in site.categories %} 
   <h2  class="article-year" id="{{ category[0] }}-ref" data-year="&diams;">{{ category[0] | join: "/" }}</h2>
@@ -37,14 +37,3 @@ title: My Notes
    
   </ul>
 {% endfor %}
-
-
-    </script>
-    <!-- jekyll-table-of-contents -->
-        <script src="/javascript/toc.js" type="text/javascript"></script>
-
-        <!-- Script to display table of content -->
-        <script type="text/javascript">
-        $(document).ready(function() {
-            $('#toc').toc({ showEffect: 'slideDown' });
-        }); </script>
