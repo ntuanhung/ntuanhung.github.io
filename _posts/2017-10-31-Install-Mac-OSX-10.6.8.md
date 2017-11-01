@@ -26,7 +26,8 @@ brew edit <package name>
 
 Check package information
 brew info <package name>
-
+brew options <package name>
+  
 Remove package 
 brew rm <package name>
 
@@ -71,14 +72,18 @@ Setup
 export FC=gfortran
 export F77=gfortran
 
-brew install hdf5 --cc=gcc-4.8 --c++11
+brew install hdf5 --cc=gcc-4.8 --c++11 -d
 
 'netCDF'
 brew tap homebrew/science
-brew install netcdf --cc=gcc-4.8 --c++11
-brew install cdo --cc=gcc-4.8 --c++11
-brew install nco --cc=gcc-4.8 --c++11
-brew install ncview --cc=gcc-4.8 --c++11
+brew install netcdf --cc=gcc-4.8 --c++11 -d
+brew install cdo --cc=gcc-4.8 --c++11 -d
+brew install nco --cc=gcc-4.8 --c++11 -d
+brew install ncview --cc=gcc-4.8 --c++11 -d
+
+Error ‘strcasecmp’ was not declared in this scope
+Change include / Add include 
+#include<string.h>
 
 Install python packages {numpy, scipy, netCDF4, Pillow, tqdm}
 
