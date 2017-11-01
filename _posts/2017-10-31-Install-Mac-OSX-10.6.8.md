@@ -13,7 +13,7 @@ First of all, we have to install Homebrew
 Next, we could install packages using 'brew' command.
 
 Update brew
-brew update
+brew upgrade
 
 Check error or warning from brew
 brew doctor
