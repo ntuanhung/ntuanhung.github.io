@@ -72,13 +72,11 @@ The CC licenses all grant the "baseline rights", such as the right to distribute
 
 ## Seven regularly CC licenses
 
-|Description|Acronym|Allows|Remix culture|Allows commercial use|Allows Free Cultural Works|Meets 'Open Definition'|
+|Description|Acronym|Allows Remix culture|Allows commercial use|Allows Free Cultural Works|Meets 'Open Definition'|
 |Freeing content globally without restrictions|CC0	|Yes	|Yes	|Yes	|Yes|
 |Attribution alone|BY	|Yes	|Yes	|Yes	|Yes|
 |Attribution + ShareAlike|BY-SA|	Yes	|Yes	|Yes|	Yes|
 |Attribution + Noncommercial|BY-NC|	Yes|	No|	No|	No|
 |Attribution + NoDerivatives|BY-ND	|No	|Yes|	No|	No|
 |Attribution + Noncommercial + ShareAlike|BY-NC-SA|	Yes|	No	|No|	No|
-
-
-CC-BY-NC-ND icon	Attribution + Noncommercial + NoDerivatives	BY-NC-ND	No	No	No	No
+|Attribution + Noncommercial + NoDerivatives|BY-NC-ND	| No	|No	| No	| No|
