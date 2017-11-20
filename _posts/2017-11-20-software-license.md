@@ -9,7 +9,7 @@ Software licenses and rights granted in context of the copyright according to [M
 Expanded by freeware and sublicensing.
 
 | Rights granted	| Public domain	| Permissive FOSS license (e.g. BSD license) |	Copyleft FOSS license (e.g. GPL) | Freeware or Shareware or Freemium | Proprietary license |	Trade secret|
-|-----------------|---------------|------------------|----------------|-------------|---------------|---------------------|-------------|
+|-----------------|---------------|------------------|----------------|-------------|---------------|---------------------|
 |Copyright retained	| No |	Yes |	Yes |	Yes |	Yes | Yes |
 |Right to perform	| Yes	|Yes	|Yes	|Yes	|Yes	|No|
 |Right to display	| Yes	|Yes	|Yes	|Yes	|Yes	|No|
@@ -73,6 +73,7 @@ The CC licenses all grant the "baseline rights", such as the right to distribute
 ## Seven regularly CC licenses
 
 |Description|Acronym|Allows Remix culture|Allows commercial use|Allows Free Cultural Works|Meets 'Open Definition'|
+|-------|-------|------|------|------|------|
 |Freeing content globally without restrictions|CC0	|Yes	|Yes	|Yes	|Yes|
 |Attribution alone|BY	|Yes	|Yes	|Yes	|Yes|
 |Attribution + ShareAlike|BY-SA|	Yes	|Yes	|Yes|	Yes|
