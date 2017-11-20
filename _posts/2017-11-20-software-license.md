@@ -41,22 +41,20 @@ Trademark grant - use of trademarks associated with the licensed code or its con
 |Academic Free License	| Lawrence E. Rosen	| 3	| 2002	|Permissive	|?	|Permissive	|?	|?	|?	|?|
 |[CC-BY](https://www.fsf.org/blogs/licensing/cc-by-4-0-and-cc-by-sa-4-0-added-to-our-list-of-free-licenses)	| Creative Commons	| 4.0	| 2002	| Permissive[15]	| Permissive	| Permissive	| No	| Yes	| Permissive	|?|
 |[CC-BY-SA](https://www.fsf.org/blogs/licensing/cc-by-4-0-and-cc-by-sa-4-0-added-to-our-list-of-free-licenses)	| Creative Commons	| 4.0	| 2002	| Copylefted[15]	| Copylefted	| Copylefted	| No	| Yes	| No	| ?|
-W3C Software Notice and License	W3C	20021231	December 31, 2002	Permissive	?	Permissive	?	?	?	?
-Boost Software License	?	1.0	August 17, 2003	Permissive	?	Permissive	?	?	?	?
-Apple Public Source License	Apple Computer	2.0	August 6, 2003	Permissive	?	Limited	?	?	?	?
-Apache License	Apache Software Foundation	2.0	2004	Permissive[11]	Permissive[11]	Permissive[11]	Yes[11]	Yes[11]	Permissive[11]	No[11]
-Eclipse Public License	Eclipse Foundation	1.0	February 2004	Limited[16]	Limited[16]	Limited[16]	Yes[16]	Yes[16]	Limited[16]	Manually[16]
-Common Development and Distribution License	Sun Microsystems	1.0	December 1, 2004	Permissive	?	Limited	?	?	?	?
-Open Software License	Lawrence Rosen	3.0	2005	Permissive	?	Copylefted	?	?	?	?
-Affero General Public License	Affero Inc	2.0	2007	Copylefted[10]	Copyleft except for the GNU AGPL[10]	Copyleft[10]	?	Yes[10]	?	?
-GNU Affero General Public License	Free Software Foundation	3.0	2007	GNU GPLv3 only[17]	Copylefted[18]	Copylefted[18]	Yes[19]	Copylefted[19]	Copylefted[18]	Yes[19]
-Reciprocal Public License	Scott Shattuck	1.5	2007	?	?	?	?	?	?	?
-GNU General Public License	Free Software Foundation	3.0	June 2007	GPLv3 compatible only[20][21]	Copylefted[18]	Copylefted[18]	Yes[22]	Yes[22]	Copylefted[18]	Yes[22]
-GNU Lesser General Public License	Free Software Foundation	3.0	June 2007	With restrictions[23]	Copylefted[18]	Copylefted[18]	Yes[24]	Yes	Copylefted[18]	Yes[24]
-Berkeley Database License	Oracle Corporation	?	February 7, 2008	?	?	?	?	?	?	?
-Creative Commons Zero	Creative Commons	1.0	2009	Public Domain[13][14]	Public Domain	Public Domain	No	Public Domain	Public Domain	No
-Mozilla Public License	Mozilla Foundation	2.0	January 3, 2012	Permissive[26]	Copylefted[26]	Copylefted[26]	Yes[26]	Yes[26]	Copylefted[26]	No[26]
-BSD License	Regents of the University of California	3.0	?	Permissive[12]	Permissive[12]	Permissive[12]	Manually[12]	Yes[12]	Permissive[12]	Manually[12]
+|W3C Software Notice and License | W3C | 20021231 |	December 31, 2002|	Permissive|	?|	Permissive|	?	|?	|?	|?|
+|Boost Software License	|?	|1.0	|August 17, 2003	|Permissive	|?	|Permissive	|?	|?	|?	|?|
+|Apple Public Source License	|Apple Computer|	2.0|	August 6, 2003|Permissive	|?	|Limited|	?	|?	|?	|?|
+|[Apache License](https://www.apache.org/licenses/LICENSE-2.0.html#redistribution)	| Apache Software Foundation	|2.0	|2004|	Permissive|	Permissive	|Permissive	|Yes|	Yes|	Permissive|	No|
+|[Eclipse Public License](http://www.eclipse.org/legal/epl-v10.html)	| Eclipse Foundation|	1.0	|February 2004|	Limited|	Limited|	Limited|	Yes|	Yes|	Limited|	Manually|
+|Common Development and Distribution License|	Sun Microsystems|	1.0	|December 1, 2004	|Permissive	|?	|Limited|	?	|?	|?	|?|
+|Open Software License	|Lawrence Rosen	|3.0|	2005	|Permissive	|?|	Copylefted	|?	|?	|?	|?|
+|[Affero General Public License](http://www.affero.org/agpl2.html)|	Affero Inc	|2.0	|2007	|Copylefted|	Copyleft except for the GNU AGPL|	Copyleft|	?	|Yes|	?|	?|
+|GNU Affero General Public License	|Free Software Foundation	|3.0|	2007	|GNU GPLv3 only|Copylefted	|Copylefted|	Yes	|Copylefted	|Copylefted	|Yes|
+|GNU General Public License|	Free Software Foundation	|3.0	|June 2007	|GPLv3 compatible only|	Copylefted|	Copylefted|	Yes|	Yes|	Copylefted|	Yes|
+|GNU Lesser General Public License	| Free Software Foundation|	3.0	|June 2007|	With restrictions|	Copylefted|	Copylefted|	Yes|	Yes|	Copylefted|	Yes|
+|Creative Commons Zero|Creative Commons|1.0|2009|Public Domain|	Public Domain|Public Domain|No|Public Domain|Public Domain|No|
+|[Mozilla Public License](https://www.mozilla.org/MPL/2.0)|Mozilla Foundation|2.0|January 3, 2012|Permissive|Copylefted|Copylefted|Yes|Yes|Copylefted|No|
+|[BSD License](http://opensource.org/licenses/BSD-3-Clause)|Regents of the University of California|3.0|	?	|Permissive|Permissive|Permissive|Manually|Yes|Permissive|Manually|
 
 #H1 Creative Commons license
 A Creative Commons (CC) license is one of several public copyright licenses that enable the free distribution of an otherwise copyrighted work. A CC license is used when an author wants to give people the right to share, use, and build upon a work that they have created. CC provides an author flexibility (for example, they might choose to allow only non-commercial uses of his/her own work) and protects the people who use or redistribute an author's work from concerns of copyright infringement as long as they abide by the conditions that are specified in the license by which the author distributes the work.
