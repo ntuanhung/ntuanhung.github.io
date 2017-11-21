@@ -1,5 +1,8 @@
 ---
-
+layout: post
+category: deep_learning
+title: Capsules G. Hinton
+date: 2017-10-27
 ---
 
 # Capsules theory
