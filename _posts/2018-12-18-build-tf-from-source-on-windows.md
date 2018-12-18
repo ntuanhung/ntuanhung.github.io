@@ -4,11 +4,12 @@ title: "Build TF from source on Windows"
 date: 2018-12-18
 ---
 # 0. Environment
-  * I verified the following steps on Windows Server 2012 R2 (Standard) 64bit
+  * I verified the following steps on Windows Server 2012 R2 (Standard) 64bit with Microsoft Visual Studio Community 2015 Update 3 and TF 1.12 version.
 
 # 1. Prerequisite 
 **(Note that, doing the following process step-by-step)**
-## 1.1. Windows 64bit might be 7 or newer.
+## 1.1. OS environment
+Windows 64bit might be 7 or newer.
   
 ## 1.2. Install Python 3
 Install a Python 3.5.x or Python 3.6.x **64-bit** release for Windows at [here](https://www.python.org/downloads/windows/). 
