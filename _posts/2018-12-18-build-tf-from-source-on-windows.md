@@ -6,12 +6,13 @@ date: 2018-12-18
 # 0. Environment
   * I verified the following steps on Windows Server 2012 R2 (Standard) 64bit
 
-# 1. Prerequisite (Note that, doing the following process step-by-step)
+# 1. Prerequisite 
+**(Note that, doing the following process step-by-step)**
 ## 1.1. Windows 64bit might be 7 or newer.
   
 ## 1.2. Install Python 3
 Install a Python 3.5.x or Python 3.6.x **64-bit** release for Windows at [here](https://www.python.org/downloads/windows/). 
-Select pip as an optional feature and add it to your %PATH% environmental variable.
+Select pip as an optional feature and add it to your ```%PATH%``` environmental variable.
   
 ## 1.3. Install python dependencies via pip
 Install the TensorFlow pip package dependencies:
@@ -36,9 +37,9 @@ Note that, verify the existence of folder ```C:\Program Files (x86)\Microsoft Vi
 
 ## 1.4. Install MSYS2
 Install MSYS2 for the bin tools needed to build TensorFlow. 
-If MSYS2 is installed to ``C:\tools\msys64``, add ```C:\tools\msys64\usr\bin``` to your %PATH% environment variable. 
+If MSYS2 is installed to ``C:\tools\msys64``, add ```C:\tools\msys64\usr\bin``` to your ```%PATH%``` environment variable. 
 
-Then, using cmd.exe, run:
+Then, using ```cmd.exe```, run:
 ```
 pacman -S git patch unzip
 ```
@@ -46,14 +47,14 @@ pacman -S git patch unzip
 ## 1.5. Download and install Bazel
 I verified 0.20.0 version of Bazel. Download [here](https://github.com/bazelbuild/bazel/releases/download/0.20.0/bazel-0.20.0-windows-x86_64.exe)
 
-Copy the file "bazel-0.20.0-windows-x86_64.exe" to folder ```C:\tools\bazel```
-Rename the file from "bazel-0.20.0-windows-x86_64.exe" to "bazel.exe"
+Copy the file ```bazel-0.20.0-windows-x86_64.exe``` to folder ```C:\tools\bazel```
+Rename the file from **```bazel-0.20.0-windows-x86_64.exe```** to **```bazel.exe```**
 
 Add ```C:\tools\bazel``` to your ```%PATH%``` environment variable.
   
 Add new environment variables:
-- BAZEL_SH with value of ```C:\tools\msys64\usr\bin\bash.exe```
-- BAZEL_VC with value of ```C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC```
+* ```BAZEL_SH``` with value of ```C:\tools\msys64\usr\bin\bash.exe```
+* ```BAZEL_VC``` with value of ```C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC```
 
 ## 1.6. Install GPU support (Optional)
 Download and Install NVIDIA CUDA SDK and cuDNN
@@ -62,14 +63,14 @@ See the [Windows GPU support guide](https://www.tensorflow.org/install/gpu) to i
 
 # 2. Build pip-package of TensorFlow from source
 ## 2.1. Download source code of TensorFlow
-Using cmd.exe, run the following commands and do NOT close cmd:
+Using ```cmd.exe```, run the following commands and do NOT close cmd window:
 ```
 git clone https://github.com/tensorflow/tensorflow.git
 cd tensorflow
 git checkout branch_name  # r1.9, r1.10, r1.11, r1.12, etc.
 ```
 
-I built successfully with r1.12.
+I built successfully with ```r1.12```.
 
 ## 2.2. Configure building process
 Run the following command:
@@ -135,14 +136,17 @@ bazel-bin\tensorflow\tools\pip_package\build_pip_package C:/tmp/tensorflow_pkg
 
 # 3. Install from pip-package
 ## 3.1. Directly install to python on system
-Using pip or pip3 to install the compiled whl file.
+Using ```pip``` or ```pip3``` to install the compiled whl file.
+
+```
 pip install C:/tmp/tensorflow_pkg/tensorflow-version-cp36-cp36m-win_amd64.whl
-  
+```
+
 ## 3.2. Install to a virtual environment of python
 In case you do NOT want to install and overwrite a new compiled TF to your python on system.
 Or you want to verify that new compiled TF.
 
-* Install via pipenv via pip[https://docs.python-guide.org/dev/virtualenvs/] using cmd.exe
+* Install ```pipenv``` via pip as [here](https://docs.python-guide.org/dev/virtualenvs/) using ```cmd.exe```
 ```
 pip install pipenv
 ```
@@ -165,7 +169,7 @@ pip install keras_applications==1.0.5 --no-deps
 pip install keras_preprocessing==1.0.3 --no-deps
 ```
 
-* Install via pip as previous
+* Install via ```pip``` as previous
 
 # 4. Verify installed TF
 
@@ -183,11 +187,12 @@ Then, run the script file by python. If you installed TF in virtual environment,
 # 5. Errors during build from source:
 * Bazel's requirements for working on Windows [https://docs.bazel.build/versions/master/windows.html#requirements] No toolchain found for cpu 'x64_windows' [https://github.com/bazelbuild/bazel/issues/2594]
 
-* Fix for "not found cuda"
-Added the content of file "./tensorflow/tools/bazel.rc" on top of (hidden) file "./tensorflow/.tf_configure.bazelrc" & build happens.
+* Fix for **```"not found cuda"```**
+Added the content of file ```./tensorflow/tools/bazel.rc``` on top of (hidden) file ```./tensorflow/.tf_configure.bazelrc```. Then, build happens.
 
-* If you found any errors, please click [here](https://github.com/ntuanhung/ntuanhung.github.io/issues/new) to report the issue to discuss with me.
-Please inform your problem as the following form
+* If you found any errors, please click **[here](https://github.com/ntuanhung/ntuanhung.github.io/issues/new)** to report the issue to discuss with me.
+
+***Please inform your problem as the following form***
 ```
 **System information**
     OS Platform and Distribution (e.g., Linux Ubuntu 16.04): Arch Linux 4.15 x86_64
