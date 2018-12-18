@@ -119,7 +119,9 @@ If your computer has a limit memory, please insert the following argument to the
 ```
 --local_resources 2048,.5,1.0
 ```
-  
+
+* Choose to compile TF for CPU or GPU
+
 Compile command for CPU
 ```
 bazel build --define=no_tensorflow_py_deps=true --incompatible_remove_native_http_archive=false --cpu=x64_windows --compiler=msvc-cl --copt=-nvcc_options=disable-warnings --config=opt --define=no_tensorflow_py_deps=true //tensorflow/tools/pip_package:build_pip_package
@@ -130,7 +132,7 @@ Compile command for GPU
 bazel build --define=no_tensorflow_py_deps=true --incompatible_remove_native_http_archive=false --cpu=x64_windows --compiler=msvc-cl --copt=-nvcc_options=disable-warnings --config=opt --config=cuda --define=no_tensorflow_py_deps=true //tensorflow/tools/pip_package:build_pip_package
 ```
 
-Build pip-package from compiled components
+After finished the compile, build pip-package from compiled components
 ```
 bazel-bin\tensorflow\tools\pip_package\build_pip_package C:/tmp/tensorflow_pkg
 ```
