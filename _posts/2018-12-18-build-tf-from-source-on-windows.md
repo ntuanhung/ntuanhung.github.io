@@ -155,17 +155,20 @@ pip install pipenv
 ```
 
 * Create virtual environment
+
 ```
 mkdir my_project_folder
 virtualenv --system-site-packages <full path to my_project_folder>
 ```
 
 * Active virtual environment
+
 ```
 <full path to my_project_folder>\Scripts\activate.bat
 ```
 
 * Install dependencies
+
 ```
 pip install six numpy wheel
 pip install keras_applications==1.0.5 --no-deps
@@ -196,6 +199,7 @@ Added the content of file ```./tensorflow/tools/bazel.rc``` on top of (hidden) f
 * If you found any errors, please click **[here](https://github.com/ntuanhung/ntuanhung.github.io/issues/new)** to report the issue to discuss with me.
 
 ***Please inform your problem as the following form***
+
 ```
 **System information**
     OS Platform and Distribution (e.g., Linux Ubuntu 16.04): Arch Linux 4.15 x86_64
