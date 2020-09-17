@@ -1,63 +1,31 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
 <!doctype html>
-<html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title }}</title>
-    <!-- <title>{{ page.title }}</title> -->
-    
-    <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/github-dark.css">
-    <!-- link to main stylesheet -->
-			
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="/javascripts/respond.js" type="text/javascript"></script>
-    
-    
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-	
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    {% include head.html %}
+    {% include head/custom.html %}
   </head>
+
   <body>
-      <div class="wrapper">
-	<div id="header">
-        <nav>
-       	  <li class="" id="home"><a href="/"><img src="/images/menu/ico_home.png" width="25" alt="Home"> <span>Home</span></a></li>         
-       	  <li class=""><a href="/notes/"><img src="/images/menu/ico-blog.png" width="23" alt="Notes"><span>Notes</span></a></li>
-	  <li class=""><a href="/blog/"><img src="/images/menu/ico-blog.png" width="23" alt="Blog"><span>Blog</span></a></li>	
-	  <li class=""><a href="/about/"><img src="/images/menu/ico-about-me.png" width="25" alt="About"><span>About</span></a></li>
-          <li class=""><a href="https://github.com/ntuanhung"><img src="/images/menu/ico-github.png" width="25" alt="Github"><span>My GitHub</span></a></li>
-        </nav>
-      </div><!-- end header -->
-      <section>
-      	<!-- title = ntuanhung.GitHub.io by ntuanhung -->
-        <div class="container">
-      	  {{ content }}
-        </div><!-- /.container -->
-        
-      </section>
-      <hr>
-        <span class="credits left">Project maintained by <a href="https://github.com/ntuanhung">ntuanhung</a></span>
-        <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a> modified by <a href="https://www.facebook.com/sweet.dream4818">DiemXiu</a></span>
-    </div> <!-- end of wrapper -->
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-    <script>
-     $(function () {
-        if (location.pathname !== '/') {
-	$("a[href*='" + location.pathname + "']").addClass("active");
-	} else {
-	var home = document.getElementById("home").getElementsByTagName('a')[0];
-	home.className = 'active';
-	}
-	});
 
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
 
-	  
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
   </body>
 </html>
