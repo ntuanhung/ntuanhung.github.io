@@ -1,0 +1,3349 @@
+---
+layout: post
+title: Databases for AI
+date: 2017-10-29
+hidden: true
+---
+Classification:
+- :group: Classification
+  :name: MNIST
+  :evaluation_units: error %
+  :description: "[Classify handwriten digits](http://yann.lecun.com/exdb/mnist/).
+    \nSome additional results are available on the [original dataset page](http://yann.lecun.com/exdb/mnist/)."
+  :figure_url: mnist.png
+- :group: Classification
+  :name: CIFAR-10
+  :evaluation_units: accuracy %
+  :description: Classify [32x32 colour images](http://www.cs.toronto.edu/~kriz/cifar.html).
+  :figure_url: cifar_10.png
+- :group: Classification
+  :name: CIFAR-100
+  :evaluation_units: accuracy %
+  :description: Classify [32x32 colour images](http://www.cs.toronto.edu/~kriz/cifar.html).
+  :figure_url: cifar_100.png
+- :group: Classification
+  :name: STL-10
+  :evaluation_units: accuracy %
+  :description: Similar to CIFAR-10 but with 96x96 images. [Original dataset website](http://www.stanford.edu/~acoates/stl10/).
+  :figure_url: stl_10.png
+- :group: Classification
+  :name: SVHN
+  :evaluation_units: error %
+  :description: |
+    [The Street View House Numbers (SVHN) Dataset](http://ufldl.stanford.edu/housenumbers).
+    SVHN is a real-world image dataset for developing machine learning and object recognition algorithms with minimal requirement on data preprocessing and formatting. It can be seen as similar in flavor to MNIST(e.g., the images are of small cropped digits), but incorporates an order of magnitude more labeled data (over 600,000 digit images) and comes from a significantly harder, unsolved, real world problem (recognizing digits and numbers in natural scene images). SVHN is obtained from house numbers in Google Street View images.
+  :figure_url: http://ufldl.stanford.edu/housenumbers/32x32eg.png
+- :group: Classification
+  :name: ILSVRC2012 task 1
+  :evaluation_units: Error (5 guesses)
+  :description: |-
+    1000 categories [classification challenge](http://www.image-net.org/challenges/LSVRC/2012/index). With tens of thousands of training, validation and testing images.
+    See this interesting [comparative analysis](http://www.image-net.org/challenges/LSVRC/2012/analysis/).
+  :figure_url: ilsvrc2012_task1.png
+  :external_results_url: http://www.image-net.org/challenges/LSVRC/2012/results.html#t1
+Detection:
+- :group: Detection
+  :name: Pascal VOC 2007 comp3
+  :evaluation_units: 'mAP percent '
+  :description: Pascal VOC 2007 is commonly used because the test set has been realased.
+    comp3 is the objects detection competition, using only the comp3 pascal training
+    data.
+  :figure_url: pascal_voc_2007.png
+- :group: Detection
+  :name: Pascal VOC 2007 comp4
+  :evaluation_units: 'mAP percent '
+  :description: Just like comp3 but "any training data" can be used.
+  :figure_url: pascal_voc_2007.png
+- :group: Detection
+  :name: Pascal VOC 2010 comp3
+  :evaluation_units: 'mAP percent '
+  :description: Pascal VOC 2010 version of the challenge. comp3 is the objects detection
+    competition.
+  :figure_url: pascal_voc_2010.png
+- :group: Detection
+  :name: Pascal VOC 2010 comp4
+  :evaluation_units: 'mAP percent '
+  :description: Just like comp3 but "any training data" can be used.
+  :figure_url: pascal_voc_2010.png
+- :group: Detection
+  :name: Pascal VOC 2011 comp3
+  :evaluation_units: 'mAP percent '
+  :description: Last Pascal VOC challenge instance (2012 version had identical data).
+  :figure_url: pascal_voc_2012.png
+- :group: Detection
+  :name: Caltech Pedestrians USA
+  :evaluation_units: average miss-rate %
+  :description: "[Project website](http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/)."
+  :figure_url: http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/files/peds02_web.jpg
+  :external_results_url: http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/rocs/UsaTestRocReasonable.pdf
+- :group: Detection
+  :name: INRIA Persons
+  :evaluation_units: average miss-rate %
+  :description: |-
+    Evaluated using the [Caltech Pedestrians toolkit](http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/).
+    [Original dataset website](http://pascal.inrialpes.fr/data/human/).
+  :figure_url: inria_persons.png
+  :external_results_url: http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/rocs/InriaTestRocReasonable.pdf
+- :group: Detection
+  :name: 'ETH Pedestrian '
+  :evaluation_units: average miss-rate %
+  :description: |-
+    Evaluated using the [Caltech Pedestrians toolkit](http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/).
+    Only left images used.
+    [Original dataset website](http://www.vision.ee.ethz.ch/~aess/dataset/).
+  :figure_url: eth_pedestrian.png
+  :external_results_url: http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/rocs/ETHRocReasonable.pdf
+- :group: Detection
+  :name: TUD-Brussels Pedestrian
+  :evaluation_units: average miss-rate %
+  :description: |-
+    Evaluated using the [Caltech Pedestrians toolkit](http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/).
+    [Original dataset website](http://www.d2.mpi-inf.mpg.de/tud-brussels).
+  :figure_url: http://www.d2.mpi-inf.mpg.de/sites/default/files/datasets/tud-brussels/teaser.png
+  :external_results_url: http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/rocs/TudBrusselsRocReasonable.pdf
+- :group: Detection
+  :name: Daimler Pedestrian
+  :evaluation_units: average miss-rate %
+  :description: |-
+    Evaluated using the [Caltech Pedestrians toolkit](http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/).
+    [Original dataset website](http://www.gavrila.net/Datasets/Daimler_Pedestrian_Benchmark_D/Daimler_Mono_Ped__Detection_Be/daimler_mono_ped__detection_be.html).
+  :figure_url: http://www.gavrila.net/Datasets/Daimler_Pedestrian_Benchmark_D/ped_det_benchmark.jpg
+  :external_results_url: http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/rocs/DaimlerRocReasonable.pdf
+- :group: Detection
+  :name: KITTI Vision Benchmark
+  :evaluation_units: average recall %
+  :description: A rich dataset to evaluate multiple computer vision tasks, including
+    cars, pedestrian and bycicles detection.
+  :figure_url: http://www.cvlibs.net/datasets/kitti/video/kitti_trailer.jpg
+  :external_results_url: http://www.cvlibs.net/datasets/kitti/eval_object.php
+Pose estimation:
+- :group: Pose estimation
+  :name: Leeds Sport Poses
+  :evaluation_units: PCP %
+  :description: "[2000 poses anotated pictures](http://www.comp.leeds.ac.uk/mat4saj/lsp.html)
+    from Flickr. From a selected set of activities and with the person at the center
+    of the pictures."
+  :figure_url: leeds_sport_poses.jpg
+Semantic labeling:
+- :group: Semantic labeling
+  :name: MSRC-21
+  :evaluation_units: accuracy % per-class / (and) per-pixel
+  :description: "One of the oldest and classic dataset for semantic labelling.\n21
+    different categories of surfaces are considered.\nDespite the innacuracies in
+    the annotations and how unbalanced the classes are, this dataset still is commonly
+    used as reference point.\nNote that here we consider the [original annotations](http://jamie.shotton.org/work/data.html)
+    (where most results are published), not the [cleaned-up version](http://www.cs.cmu.edu/~tmalisie/projects/bmvc07).
+    \n\n\nThe results are reported per-class and per-pixel (this is sometimes called
+    \"average\" and \"global\" result, respectively).\n\n\n[Original dataset website](http://jamie.shotton.org/work/data.html)\n"
+  :figure_url: msrc_21.png
+Saliency/Segmentation:
+- :group: Saliency/Segmentation
+  :name: Salient Object Detection benchmark
+  :evaluation_units: AUC (precision/recall area under the curve) and MAE (mean absolute
+    error)
+  :description: This benchmark aggregates results from 36 methods over five datasets
+    (MSRA10K, ECSSD, THUR15K, JuddDB, and DUTOMRON).
+  :figure_url: saliency_benchmark.png
+  :external_results_url: http://mmcheng.net/salobjbenchmark/
+---  
+- :dataset_name: COIL-100
+
+  :paper_name: Deep Learning from Temporal Coherence in Video
+
+  :paper_year: '2009'
+
+  :paper_venue: ICML
+
+  :result: 92.5%
+
+  :paper_pdf_url: http://ronan.collobert.com/pub/matos/2009_video_icml.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: 'Multi-column Deep Neural Networks for Image Classiﬁcation '
+
+  :paper_year: '2012'
+
+  :paper_venue: CVPR
+
+  :result: 0.23%
+
+  :paper_pdf_url: http://www.idsia.ch/~ciresan/data/cvpr2012.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: Deep Big Simple Neural Nets Excel on Handwritten Digit Recognition
+
+  :paper_year: '2010'
+
+  :paper_venue: Neural Computation
+
+  :result: 0.35%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1003.0358.pdf
+
+  :additional_information: 6-layer NN 784-2500-2000-1500-1000-500-10 (on GPU), uses
+
+    elastic distortions
+
+- :dataset_name: MNIST
+
+  :paper_name: Efﬁcient Learning of Sparse Representations with an Energy-Based Model
+
+  :paper_year: '2006'
+
+  :paper_venue: NIPS
+
+  :result: 0.39%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/3112-efficient-learning-of-sparse-representations-with-an-energy-based-model
+
+  :additional_information: Large conv. net, unsup pretraining, uses elastic distortions
+
+- :dataset_name: MNIST
+
+  :paper_name: Best Practices for Convolutional Neural Networks Applied to Visual
+
+    Document Analysis
+
+  :paper_year: '2003'
+
+  :paper_venue: Document Analysis and Recognition
+
+  :result: 0.4%
+
+  :paper_pdf_url: http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=D1C7D701BD39935473808DA5A93426C5?doi=10.1.1.160.8494&rep=rep1&type=pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: What is the Best Multi-Stage Architecture for Object Recognition?
+
+  :paper_year: '2009'
+
+  :paper_venue: ICCV
+
+  :result: 0.53%
+
+  :paper_pdf_url: http://yann.lecun.com/exdb/publis/pdf/jarrett-iccv-09.pdf
+
+  :additional_information: Large conv. net, unsup pretraining, no distortions
+
+- :dataset_name: MNIST
+
+  :paper_name: Deformation Models for Image Recognition
+
+  :paper_year: '2007'
+
+  :paper_venue: PAMI
+
+  :result: 0.54%
+
+  :paper_pdf_url: http://www.keysers.net/daniel/files/Keysers--Deformation-Models--TPAMI2007.pdf
+
+  :additional_information: 'K-NN with non-linear deformation (IDM) (Preprocessing:
+
+    shiftable edges)'
+
+- :dataset_name: MNIST
+
+  :paper_name: A trainable feature extractor for handwritten digit recognition
+
+  :paper_year: '2007'
+
+  :paper_venue: |2-
+
+     Journal
+
+    Pattern Recognition
+
+  :result: 0.54%
+
+  :paper_pdf_url: http://hal.inria.fr/docs/00/05/75/61/PDF/LauerSuenBlochPR.pdf
+
+  :additional_information: Trainable feature extractor + SVMs, uses affine distortions
+
+- :dataset_name: MNIST
+
+  :paper_name: Training Invariant Support Vector Machines
+
+  :paper_year: '2002'
+
+  :paper_venue: Machine Learning
+
+  :result: 0.56%
+
+  :paper_pdf_url: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.88.9924&rep=rep1&type=pdf
+
+  :additional_information: 'Virtual SVM, deg-9 poly, 2-pixel jittered (Preprocessing:
+
+    deskewing)'
+
+- :dataset_name: MNIST
+
+  :paper_name: Simple Methods for High-Performance Digit Recognition Based on Sparse
+
+    Coding
+
+  :paper_year: '2008'
+
+  :paper_venue: TNN
+
+  :result: 0.59%
+
+  :paper_pdf_url: http://www.inb.uni-luebeck.de/publikationen/pdfs/LaBaMa08c.pdf
+
+  :additional_information: Unsupervised sparse features + SVM, no distortions
+
+- :dataset_name: MNIST
+
+  :paper_name: Unsupervised learning of invariant feature hierarchies with applications
+
+    to object recognition
+
+  :paper_year: '2007'
+
+  :paper_venue: CVPR
+
+  :result: 0.62%
+
+  :paper_pdf_url: http://yann.lecun.com/exdb/publis/pdf/ranzato-cvpr-07.pdf
+
+  :additional_information: Large conv. net, unsup features, no distortions
+
+- :dataset_name: MNIST
+
+  :paper_name: Shape matching and object recognition using shape contexts
+
+  :paper_year: '2002'
+
+  :paper_venue: PAMI
+
+  :result: 0.63%
+
+  :paper_pdf_url: http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B2AAC2BC3824F19757CAC66986D5F3FF?doi=10.1.1.18.8852&rep=rep1&type=pdf
+
+  :additional_information: 'K-NN, shape context matching (preprocessing: shape context
+
+    feature extraction)'
+
+- :dataset_name: MNIST
+
+  :paper_name: 'Beyond Spatial Pyramids: Receptive Field Learning for Pooled Image
+
+    Features'
+
+  :paper_year: '2012'
+
+  :paper_venue: CVPR
+
+  :result: 0.64%
+
+  :paper_pdf_url: http://www.icsi.berkeley.edu/pubs/vision/beyondspatial12.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: Convolutional Deep Belief Networks for Scalable Unsupervised Learning
+
+    of Hierarchical Representations
+
+  :paper_year: '2009'
+
+  :paper_venue: ICML
+
+  :result: 0.82%
+
+- :dataset_name: MNIST
+
+  :paper_name: Large-Margin kNN Classification using a Deep Encoder Network
+
+  :paper_year: '2009'
+
+  :result: 0.94%
+
+- :dataset_name: MNIST
+
+  :paper_name: Deep Boltzmann Machines
+
+  :paper_year: '2009'
+
+  :paper_venue: AISTATS
+
+  :result: 0.95%
+
+  :paper_pdf_url: http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: 'CS81: Learning words with Deep Belief Networks'
+
+  :paper_year: '2008'
+
+  :result: 1.12%
+
+- :dataset_name: MNIST
+
+  :paper_name: 'Convolutional Neural Networks '
+
+  :paper_year: '2003'
+
+  :result: 1.19%
+
+  :additional_information: The ConvNN is based on the paper "Best Practices for Convolutional
+
+    Neural Networks Applied to Visual Document Analysis".
+
+- :dataset_name: MNIST
+
+  :paper_name: 'Reducing the dimensionality of data with neural networks '
+
+  :paper_year: '2006'
+
+  :result: 1.2%
+
+- :dataset_name: MNIST
+
+  :paper_name: Deep learning via semi-supervised embedding
+
+  :paper_year: '2008'
+
+  :result: 1.5%
+
+- :dataset_name: STL-10
+
+  :paper_name: Discriminative Learning of Sum-Product Networks
+
+  :paper_year: '2012'
+
+  :paper_venue: NIPS
+
+  :result: 62.3% (±1%)
+
+  :paper_pdf_url: http://homes.cs.washington.edu/~rcg/papers/dspn.pdf
+
+- :dataset_name: STL-10
+
+  :paper_name: 'Selecting Receptive Fields in Deep Networks '
+
+  :paper_year: '2011'
+
+  :paper_venue: NIPS
+
+  :result: 60.1% (±1%)
+
+  :paper_pdf_url: http://www.stanford.edu/~acoates/papers/coatesng_nips_2011.pdf
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Object Detection with Discriminatively Trained Part Based Models
+
+  :paper_year: '2010'
+
+  :paper_venue: PAMI
+
+  :result: 35.4 mAP
+
+  :paper_pdf_url: http://www.cs.berkeley.edu/~rbg/latent/index.html
+
+  :additional_information: 2012 results using [voc-release5](http://www.cs.berkeley.edu/~rbg/latent/index.html)
+
+    (instead of release3 from 2010), with context. Obtains 33.7 mAP without context.
+
+- :dataset_name: Pascal VOC 2011/2012 comp3
+
+  :paper_name: 'Object Detection with Discriminatively Trained Part Based Models '
+
+  :paper_year: '2010'
+
+  :paper_venue: PAMI
+
+  :result: 33.4 mAP
+
+  :paper_pdf_url: http://www.cs.berkeley.edu/~rbg/latent/index.html
+
+  :additional_information: 2012 results [voc-release5](http://www.cs.berkeley.edu/~rbg/latent/index.html),
+
+    with context and extra octave. Obtains 29.6 mAP without context (or extra octave).
+
+- :dataset_name: Pascal VOC 2011/2012 comp3
+
+  :paper_name: Hybrid Coding for Selective Search (UVA submission)
+
+  :paper_year: '2012'
+
+  :paper_venue: PASCAL VOC
+
+  :result: 40.86 mAP
+
+  :paper_pdf_url: http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012/results/index.html#KEY_UVA_HYBRID_CODING_APE
+
+  :additional_information: "Winner of comp3 2012. This unpublished work presented
+
+    at the PASCAL VOC 2012 workshop (at ECCV 2012). \n\nSee the [UVA_HYBRID_CODING_APE
+
+    method description](http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012/results/index.html#KEY_UVA_HYBRID_CODING_APE)
+
+    or the workshop [presentation slides](http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012/workshop/VOC2012-UvA-HybridCodingForSelectiveSearch.pdf)
+
+    for details on these results are achieved."
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Latent Hierarchical Structural Learning for Object Detection
+
+  :paper_year: '2010'
+
+  :paper_venue: CVPR
+
+  :result: 29.6 mAP
+
+  :paper_pdf_url: http://people.csail.mit.edu/leozhu/paper/cvpr10iCCCP.pdf
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Automatic discovery of meaningful object parts with latent CRFs
+
+  :paper_year: '2010'
+
+  :paper_venue: CVPR
+
+  :result: 28.7 mAP
+
+  :paper_pdf_url: http://www.gris.informatik.tu-darmstadt.de/~sroth/pubs/cvpr10schnitzspan.pdf
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Object Detection with Discriminatively Trained Part Based Models
+
+  :paper_year: '2010'
+
+  :paper_venue: PAMI
+
+  :result: 29.0 mAP
+
+  :paper_pdf_url: http://www.cs.berkeley.edu/~rbg/latent/index.html
+
+  :additional_information: Original PAMI 2010 results, using [voc-release3](http://www.cs.berkeley.edu/~rbg/latent/index.html),
+
+    with context. Obtains 26.2 mAP without context.
+
+- :dataset_name: STL-10
+
+  :paper_name: 'Pooling-Invariant Image Feature Learning '
+
+  :paper_year: '2012'
+
+  :paper_venue: arXiv
+
+  :result: 58.28%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1302.5056v1.pdf
+
+  :additional_information: 1600 codes, learnt using 2x PDL
+
+- :dataset_name: STL-10
+
+  :paper_name: Deep Learning of Invariant Features via Simulated Fixations in Video
+
+  :paper_year: '2012'
+
+  :paper_venue: NIPS
+
+  :result: 56.5%
+
+  :paper_pdf_url: http://ai.stanford.edu/~wzou/nips_ZouZhuNgYu12.pdf
+
+  :additional_information: Trained also with video (unrelated to STL-10) obtained
+
+    61%
+
+- :dataset_name: Leeds Sport Poses
+
+  :paper_name: 'Pictorial structures revisited: People detection and articulated pose
+
+    estimation'
+
+  :paper_year: '2009'
+
+  :paper_venue: CVPR
+
+  :result: 55.6%
+
+  :paper_pdf_url: http://www.d2.mpi-inf.mpg.de/andriluka_cvpr09
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Maxout Networks
+
+  :paper_year: '2013'
+
+  :paper_venue: ICML
+
+  :result: 61.43%
+
+  :paper_pdf_url: http://jmlr.org/proceedings/papers/v28/goodfellow13.pdf
+
+  :additional_information: Uses convolution. Does not use dataset agumentation.
+
+- :dataset_name: MNIST
+
+  :paper_name: Maxout Networks
+
+  :paper_year: '2013'
+
+  :paper_venue: ICML
+
+  :result: 0.45%
+
+  :paper_pdf_url: http://jmlr.org/proceedings/papers/v28/goodfellow13.pdf
+
+  :additional_information: |-
+
+    Uses convolution.
+
+    Does not use dataset augmentation.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'Multi-Column Deep Neural Networks for Image Classification '
+
+  :paper_year: '2012'
+
+  :paper_venue: CVPR
+
+  :result: 88.79%
+
+  :paper_pdf_url: http://www.idsia.ch/~ciresan/data/cvpr2012.pdf
+
+  :additional_information: "[Supplemental material](http://www.idsia.ch/~ciresan/data/cvpr2012-supp.pdf),
+
+    [Technical Report](http://arxiv.org/pdf/1202.2745v1.pdf)"
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'Practical Bayesian Optimization of Machine Learning Algorithms '
+
+  :paper_year: '2012'
+
+  :paper_venue: NIPS
+
+  :result: 90.5%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf
+
+  :additional_information: |-
+
+    Reaches 85.02% without data augmentation.
+
+
+
+    With data augmented with horizontal reﬂections and translations, 90.5% accuracy on  test set is achieved.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Stochastic Pooling for Regularization of Deep Convolutional Neural
+
+    Networks
+
+  :paper_year: '2013'
+
+  :paper_venue: arXiv
+
+  :result: 84.87%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1301.3557.pdf
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Improving neural networks by preventing co-adaptation of feature detectors
+
+  :paper_year: '2012'
+
+  :paper_venue: arXiv
+
+  :result: 84.4%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1207.0580.pdf
+
+  :additional_information: So called "dropout" method.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Stochastic Pooling for Regularization of Deep Convolutional Neural
+
+    Networks
+
+  :paper_year: '2013'
+
+  :paper_venue: arXiv
+
+  :result: 57.49%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1301.3557.pdf
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Discriminative Learning of Sum-Product Networks
+
+  :paper_year: '2012'
+
+  :paper_venue: NIPS
+
+  :result: 83.96%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/4516-discriminative-learning-of-sum-product-networks
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: 'Beyond Spatial Pyramids: Receptive Field Learning for Pooled Image
+
+    Features'
+
+  :paper_year: '2012'
+
+  :paper_venue: CVPR
+
+  :result: 54.23%
+
+  :paper_pdf_url: http://www.eecs.berkeley.edu/~jiayq/assets/pdf/cvpr12_pooling.pdf
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: ImageNet Classification with Deep Convolutional Neural Networks
+
+  :paper_year: '2012'
+
+  :paper_venue: NIPS
+
+  :result: 89%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
+
+  :additional_information: 87% error on the unaugmented data.
+
+- :dataset_name: SVHN
+
+  :paper_name: Stochastic Pooling for Regularization of Deep Convolutional Neural
+
+    Networks
+
+  :paper_year: '2013'
+
+  :paper_venue: arXiv
+
+  :result: 2.8%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1301.3557.pdf
+
+  :additional_information: 64-64-128 Stochastic Pooling
+
+- :dataset_name: SVHN
+
+  :paper_name: Convolutional neural networks applied to house numbers digit classiﬁcation
+
+  :paper_year: '2012'
+
+  :paper_venue: ICPR
+
+  :result: 4.9%
+
+  :paper_pdf_url: http://yann.lecun.com/exdb/publis/pdf/sermanet-icpr-12.pdf
+
+  :additional_information: ConvNet / MS / L4 / Padded
+
+- :dataset_name: SVHN
+
+  :paper_name: Estimated human performance
+
+  :paper_year: '2011'
+
+  :paper_venue: NIPS
+
+  :result: 2%
+
+  :paper_pdf_url: http://ufldl.stanford.edu/housenumbers/nips2011_housenumbers.pdf
+
+  :additional_information: |-
+
+    Based on the paper that introduced the dataset [Reading Digits in Natural Images
+
+    with Unsupervised Feature Learning](http://ufldl.stanford.edu/housenumbers/nips2011_housenumbers.pdf), section 5.
+
+- :dataset_name: MSRC-21
+
+  :paper_name: Harmony Potentials - Fusing Local and Global Scale for Semantic Image
+
+    Segmentation
+
+  :paper_year: '2012'
+
+  :paper_venue: IJCV
+
+  :result: 80% / 83%
+
+  :paper_pdf_url: http://link.springer.com/article/10.1007%2Fs11263-011-0449-8
+
+  :additional_information: per-class % / per-pixel %
+
+- :dataset_name: MSRC-21
+
+  :paper_name: Graph Cut based Inference with Co-occurrence Statistics
+
+  :paper_year: '2010'
+
+  :paper_venue: ECCV
+
+  :result: 77% / 87%
+
+  :paper_pdf_url: http://research.microsoft.com/en-us/um/people/pkohli/papers/lrkt_eccv2010.pdf
+
+- :dataset_name: MSRC-21
+
+  :paper_name: TextonBoost for Image Understanding
+
+  :paper_year: '2009'
+
+  :paper_venue: IJCV
+
+  :result: 57% / 72%
+
+  :paper_pdf_url: http://research.microsoft.com/pubs/117885/ijcv07a.pdf
+
+  :additional_information: "?? / 69.6 % (per-class / per-pixel) the unaries alone
+
+    (no CRF on top)"
+
+- :dataset_name: MSRC-21
+
+  :paper_name: Semantic Texton Forests for Image Categorization and Segmentation
+
+  :paper_year: '2008'
+
+  :paper_venue: CVPR
+
+  :result: 67% / 72%
+
+  :paper_pdf_url: http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2008-CVPR-semantic-texton-forests.pdf
+
+- :dataset_name: MSRC-21
+
+  :paper_name: Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials
+
+  :paper_year: '2011'
+
+  :paper_venue: NIPS
+
+  :result: 78% / 86%
+
+  :paper_pdf_url: http://graphics.stanford.edu/projects/densecrf/densecrf.pdf
+
+  :additional_information: 'Strong unary used provides 76.6% / 84.0% '
+
+- :dataset_name: MSRC-21
+
+  :paper_name: 'Describing the Scene as a Whole: Joint Object Detection, Scene Classification
+
+    and Semantic Segmentation'
+
+  :paper_year: '2012'
+
+  :paper_venue: CVPR
+
+  :result: 79% / 86%
+
+  :paper_pdf_url: http://ttic.uchicago.edu/~rurtasun/publications/yao_et_al_cvpr12.pdf
+
+- :dataset_name: MSRC-21
+
+  :paper_name: Auto-Context and Its Application to High-Level Vision Tasks and 3D
+
+    Brain Image Segmentation
+
+  :paper_year: '2010'
+
+  :paper_venue: PAMI
+
+  :result: 69% / 78%
+
+  :paper_pdf_url: http://pages.ucsd.edu/~ztu/publication/pami_autocontext.pdf
+
+- :dataset_name: MSRC-21
+
+  :paper_name: Are Spatial and Global Constraints Really Necessary for Segmentation?
+
+  :paper_year: '2011'
+
+  :paper_venue: ICCV
+
+  :result: 77% / 85%
+
+  :paper_pdf_url: http://infoscience.epfl.ch/record/169178/files/lucchi_ICCV11.pdf
+
+  :additional_information: |-
+
+    Several variants are examined, no single method attains the overall best results, i.e. both best per-class and per-pixel averages simultaneously. Indicated result corresponds to the method that we best on the average (per-class + per-pixel / 2).
+
+    Experiment [data available](http://cvlab.epfl.ch/data/dpg/index.php).
+
+- :dataset_name: STL-10
+
+  :paper_name: Learning Invariant Representations with Local Transformations
+
+  :paper_year: '2012'
+
+  :paper_venue: ICML
+
+  :result: 58.7%
+
+  :paper_pdf_url: http://web.eecs.umich.edu/~honglak/icml12-invariantFeatureLearning.pdf
+
+- :dataset_name: STL-10
+
+  :paper_name: Deep Learning of Invariant Features via Simulated Fixations in Video
+
+  :paper_year: '2012'
+
+  :paper_venue: NIPS 2012
+
+  :result: 61%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/4730-deep-learning-of-invariant-features-via-simulated-fixations-in-video
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Maxout Networks
+
+  :paper_year: '2013'
+
+  :paper_venue: ICML
+
+  :result: 90.65%
+
+  :paper_pdf_url: http://jmlr.org/proceedings/papers/v28/goodfellow13.pdf
+
+  :additional_information: |-
+
+    This result was obtained using both convolution and synthetic translations / horizontal reflections of the training data.
+
+
+
+    Reaches 88.32% when using convolution, but without any synthetic transformations of the training data.
+
+- :dataset_name: MNIST
+
+  :paper_name: Regularization of Neural Networks using DropConnect
+
+  :paper_year: '2013'
+
+  :paper_venue: ICML
+
+  :result: 0.21%
+
+  :paper_pdf_url: http://cs.nyu.edu/~wanli/dropc/
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Regularization of Neural Networks using DropConnect
+
+  :paper_year: '2013'
+
+  :paper_venue: ICML
+
+  :result: 90.68%
+
+  :paper_pdf_url: http://cs.nyu.edu/~wanli/dropc/
+
+- :dataset_name: SVHN
+
+  :paper_name: Regularization of Neural Networks using DropConnect
+
+  :paper_year: '2013'
+
+  :paper_venue: ICML
+
+  :result: 1.94%
+
+  :paper_pdf_url: http://cs.nyu.edu/~wanli/dropc/
+
+- :dataset_name: SVHN
+
+  :paper_name: Maxout Networks
+
+  :paper_year: '2013'
+
+  :paper_venue: ICML
+
+  :result: 2.47%
+
+  :paper_pdf_url: http://jmlr.org/proceedings/papers/v28/goodfellow13.pdf
+
+  :additional_information: This result was obtained using convolution but not any
+
+    synthetic transformations of the training data.
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: 'Beyond Bounding-Boxes: Learning Object Shape by Model-Driven Grouping'
+
+  :paper_year: '2012'
+
+  :paper_venue: ECCV
+
+  :result: 43.7 mAP
+
+  :paper_pdf_url: http://hci.iwr.uni-heidelberg.de/Staff/bommer/papers/monroy_ommer_eccv12.pdf
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Deformable Part Models with Individual Part Scaling
+
+  :paper_year: '2013'
+
+  :paper_venue: BMVC
+
+  :result: 32.4 mAP
+
+  :paper_pdf_url: http://www.idiap.ch/~fleuret/papers/dubout-fleuret-bmvc2013.pdf
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Discriminatively Trained And-Or Tree Models for Object Detection
+
+  :paper_year: '2013'
+
+  :paper_venue: CVPR
+
+  :result: 34.7 mAP
+
+  :paper_pdf_url: http://www.stat.ucla.edu/~sczhu/papers/Conf_2013/DiscriminativeAOG_cvpr2013.pdf
+
+  :additional_information: The number of components, parts, their shape, appearance,
+
+    and configuration are all learned.
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Discriminatively Trained And-Or Tree Models for Object Detection
+
+  :paper_year: '2013'
+
+  :paper_venue: CVPR
+
+  :result: 29.4 mAP
+
+  :paper_pdf_url: http://www.stat.ucla.edu/~sczhu/papers/Conf_2013/DiscriminativeAOG_cvpr2013.pdf
+
+  :additional_information: The number of components, parts, their shape, appearance,
+
+    and configuration are all learned.
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Object Detection with Discriminatively Trained Part Based Models
+
+  :paper_year: '2010'
+
+  :paper_venue: PAMI
+
+  :result: 33.4 mAP
+
+  :paper_pdf_url: http://people.cs.uchicago.edu/~rbg/latent-release5/
+
+  :additional_information: |
+
+    This are the results of version 5 (September 2012) with context and extra octave. Raw detection obtains 29.6 mAP.
+
+- :dataset_name: Pascal VOC 2010 comp4
+
+  :paper_name: Bottom-up Segmentation for Top-down Detection
+
+  :paper_year: '2013'
+
+  :paper_venue: CVPR
+
+  :result: 40.4 mAP
+
+  :paper_pdf_url: http://ttic.uchicago.edu/~fidler/papers/fidler_et_al_cvpr13a.pdf
+
+  :additional_information: "Reaches 40.4 mAP when using full post-processing. \nReaches
+
+    36.6 mAP without any post-processing.\nThis method builds upon a sophisticated
+
+    object segmentation method (CPMC)."
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Object Detection by Context and Boosted HOG-LBP
+
+  :paper_year: '2010'
+
+  :paper_venue: ECCV
+
+  :result: 36.8 mAP
+
+  :paper_pdf_url: http://kylezheng.org/publications/
+
+  :additional_information: There seem to be no paper about this work, but only the
+
+    slides from the entry at the PASCAL VOC workshop ECCV 2010.
+
+- :dataset_name: MSRC-21
+
+  :paper_name: Structured Image Segmentation using Kernelized Features
+
+  :paper_year: '2012'
+
+  :paper_venue: ECCV
+
+  :result: 76 % / 82 %
+
+  :paper_pdf_url: http://infoscience.epfl.ch/record/180190
+
+  :additional_information: 70 % / 73 % when using only local features (not considering
+
+    global features)
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'An Analysis of Single-Layer Networks in Unsupervised Feature Learning '
+
+  :paper_year: '2011'
+
+  :paper_venue: AISTATS
+
+  :result: 79.6 %
+
+  :paper_pdf_url: http://www.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf
+
+  :additional_information: 79.6% obtained using K-means over whitened patches, with
+
+    triangle encoding and 4000 features (clusters).
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Segmentation as selective search for object recognition
+
+  :paper_year: '2011'
+
+  :paper_venue: ICCV
+
+  :result: 34.1 mAP
+
+  :paper_pdf_url: http://www.science.uva.nl/research/publications/2011/vandeSandeICCV2011/vandesande_iccv2011.pdf
+
+  :additional_information: Source code availabe at http://koen.me/research/selectivesearch/
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Latent Hierarchical Structural Learning for Object  Detection
+
+  :paper_year: '2010'
+
+  :paper_venue: CVPR
+
+  :result: 36.0 mAP
+
+  :paper_pdf_url: http://people.csail.mit.edu/leozhu/paper/cvpr10iCCCP.pdf
+
+  :additional_information: |-
+
+    Result presented in the [VOC 2010 workshop](http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2010/workshop/mitucla.pdf) at ECCV 2010.
+
+    They reported 35.99, which rounds up to 36.0.
+
+- :dataset_name: Leeds Sport Poses
+
+  :paper_name: Articulated pose estimation with flexible mixtures-of-parts
+
+  :paper_year: '2011'
+
+  :paper_venue: CVPR
+
+  :result: 60.8 %
+
+  :paper_pdf_url: http://www.ics.uci.edu/~dramanan/papers/pose2011.pdf
+
+- :dataset_name: Leeds Sport Poses
+
+  :paper_name: Appearance sharing for collective human pose estimation
+
+  :paper_year: '2012'
+
+  :paper_venue: ACCV
+
+  :result: 64.3 %
+
+  :paper_pdf_url: http://groups.inf.ed.ac.uk/calvin/Publications/eichner12accv.pdf
+
+- :dataset_name: Leeds Sport Poses
+
+  :paper_name: Poselet conditioned pictorial structures
+
+  :paper_year: '2013'
+
+  :paper_venue: CVPR
+
+  :result: 63.3 %
+
+  :paper_pdf_url: http://www.d2.mpi-inf.mpg.de/sites/default/files/pishchulin13cvpr.pdf
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Detection Evolution with Multi-Order Contextual Co-occurrence
+
+  :paper_year: '2013'
+
+  :paper_venue: CVPR
+
+  :result: 38.7 mAP
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Chen_Detection_Evolution_with_2013_CVPR_paper.pdf
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Color Attributes for Object Detection
+
+  :paper_year: '2012'
+
+  :paper_venue: CVPR
+
+  :result: 34.8 mAP
+
+  :paper_pdf_url: http://cat.uab.cat/Public/Publications/2012/SRV2012/cvpr2012.pdf
+
+  :additional_information: Code [available](http://www.cat.uab.cat/Research/object-detection).
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Ensemble of Exemplar-SVMs for Object Detection and Beyond
+
+  :paper_year: '2011'
+
+  :paper_venue: ICCV
+
+  :result: 22.7 mAP
+
+  :paper_pdf_url: http://www.cs.cmu.edu/~tmalisie/projects/iccv11/exemplarsvm-iccv11.pdf
+
+  :additional_information: |-
+
+    Reaches 19.8 mAP when not using context.
+
+
+
+    Code [available](http://www.cs.cmu.edu/~tmalisie/projects/iccv11).
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Incorporating Structural Alternatives and Sharing into Hierarchy for
+
+    Multiclass Object Recognition and Detection
+
+  :paper_year: '2013'
+
+  :paper_venue: CVPR
+
+  :result: 34.7 mAP
+
+  :paper_pdf_url: http://ss.sysu.edu.cn/~ll/files/multiclassaog_cvpr2013.pdf
+
+- :dataset_name: MSRC-21
+
+  :paper_name: 'PatchMatchGraph: Building a Graph of Dense Patch Correspondences for
+
+    Label Transfer'
+
+  :paper_year: '2012'
+
+  :paper_venue: ECCV
+
+  :result: 72.8% / 79.0%
+
+  :paper_pdf_url: http://users.cecs.anu.edu.au/~sgould/papers/eccv12-patchGraph.pdf
+
+  :additional_information: |2-
+
+     49.8% / 63.3% raw PatchMatchGraph accuracy, 72.8% / 79.0% when using Boosted CRF.
+
+
+
+    Code [available](http://drwn.anu.edu.au/drwnProjPatchMatch.html).
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Learning Collections of Part Models for Object Recognition
+
+  :paper_year: '2013'
+
+  :paper_venue: CVPR
+
+  :result: 24.98 mAP
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Endres_Learning_Collections_of_2013_CVPR_paper.pdf
+
+- :dataset_name: Leeds Sport Poses
+
+  :paper_name: Strong Appearance and Expressive Spatial Models for Human Pose Estimation
+
+  :paper_year: '2013'
+
+  :paper_venue: ICCV
+
+  :result: 69.2 %
+
+  :paper_pdf_url: http://www.d2.mpi-inf.mpg.de/sites/default/files/pishchulin13iccv.pdf
+
+  :additional_information: Starting model reaches 58.1 %, improved local appearances
+
+    reaches 66.9 %, and 69.2% when using the full model.
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Histograms of Sparse Codes for Object Detection
+
+  :paper_year: '2013'
+
+  :paper_venue: CVPR
+
+  :result: 34.3 mAP
+
+  :paper_pdf_url: http://www.ics.uci.edu/~dramanan/papers/hsc.pdf
+
+  :additional_information: Reaches 26.9 mAP when using only the root templates (no
+
+    parts).
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Measuring the objectness of image windows
+
+  :paper_year: '2012'
+
+  :paper_venue: PAMI
+
+  :result: 27.4 mAP
+
+  :paper_pdf_url: http://groups.inf.ed.ac.uk/calvin/Publications/alexe12pami.pdf
+
+  :additional_information: Source code [available](http://groups.inf.ed.ac.uk/calvin/objectness/).
+
+- :dataset_name: MNIST
+
+  :paper_name: Trainable COSFIRE filters for keypoint detection and pattern recognition
+
+  :paper_year: '2013'
+
+  :paper_venue: PAMI
+
+  :result: 0.52 %
+
+  :paper_pdf_url: http://iwi.eldoc.ub.rug.nl/FILES/root/2013/IEEETPAMIAzzopardi/2013IEEETPAMIAzzopardi.pdf
+
+  :additional_information: Source code [available](http://www.mathworks.de/matlabcentral/fileexchange/37395-trainable-cosfire-filters-for-keypoint-detection-and-pattern-recognition).
+
+- :dataset_name: STL-10
+
+  :paper_name: Unsupervised Feature Learning for RGB-D Based Object Recognition
+
+  :paper_year: '2012'
+
+  :paper_venue: ISER
+
+  :result: 64.5% (±1%)
+
+  :paper_pdf_url: http://homes.cs.washington.edu/~lfb/paper/iser12.pdf
+
+  :additional_information: Hierarchical sparse coding using Matching Pursuit and K-SVD
+
+- :dataset_name: MSRC-21
+
+  :paper_name: 'Morphological Proximity Priors: Spatial Relationships for Semantic
+
+    Segmentation'
+
+  :paper_year: '2013'
+
+  :paper_venue: TUM-I1222
+
+  :result: '78.2% / 85.0% '
+
+  :paper_pdf_url: http://mediatum.ub.tum.de/doc/1175516/1175516.pdf
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Regionlets for Generic Object Detection
+
+  :paper_year: '2013'
+
+  :paper_venue: ICCV
+
+  :result: 41.7 mAP
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_iccv_2013/papers/Wang_Regionlets_for_Generic_2013_ICCV_paper.pdf
+
+  :additional_information: No context information being used.
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Regionlets for Generic Object Detection
+
+  :paper_year: '2013'
+
+  :paper_venue: ICCV
+
+  :result: 39.7 mAP
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_iccv_2013/papers/Wang_Regionlets_for_Generic_2013_ICCV_paper.pdf
+
+  :additional_information: No context information being used.
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Selective Search for Object Recognition
+
+  :paper_year: '2013'
+
+  :paper_venue: IJCV
+
+  :result: 35.1 mAP
+
+  :paper_pdf_url: http://www.science.uva.nl/research/publications/2013/UijlingsIJCV2013/uijlings_ijcv2013_draft.pdf
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Segmentation Driven Object Detection with Fisher Vectors
+
+  :paper_year: '2013'
+
+  :paper_venue: ICCV
+
+  :result: 40.5 mAP
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_iccv_2013/papers/Cinbis_Segmentation_Driven_Object_2013_ICCV_paper.pdf
+
+  :additional_information: " 38.5 mAP when not using inter-class contextual cues"
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Segmentation Driven Object Detection with Fisher Vectors
+
+  :paper_year: '2013'
+
+  :paper_venue: ICCV
+
+  :result: 38.4 mAP
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_iccv_2013/papers/Cinbis_Segmentation_Driven_Object_2013_ICCV_paper.pdf
+
+  :additional_information: " 35.8 mAP when not using inter-class contextual cues"
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Boosted local structured HOG-LBP for object localization
+
+  :paper_year: '2011'
+
+  :paper_venue: CVPR
+
+  :result: 34.3 mAP
+
+  :paper_pdf_url: http://www.nlpr.ia.ac.cn/2011papers/gjhy/gh20.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: Sparse Activity and Sparse Connectivity in Supervised Learning
+
+  :paper_year: '2013'
+
+  :paper_venue: JMLR
+
+  :result: 0.75%
+
+  :paper_pdf_url: http://jmlr.org/papers/v14/thom13a.html
+
+- :dataset_name: Pascal VOC 2007 comp3
+
+  :paper_name: Machine Learning Methods for Visual Object Detection
+
+  :paper_year: '2011'
+
+  :paper_venue: archives-ouvertes
+
+  :result: 36.0 mAP
+
+  :paper_pdf_url: http://tel.archives-ouvertes.fr/docs/00/72/26/32/PDF/thesis.pdf
+
+  :additional_information: "Thesis results based on the features explained in our
+
+    earlier paper \"Feature Sets and Dimensionality Reduction For Visual Object Detection,
+
+    BMVC, 2010\". \n\nResults table can be found on the page 104 of thesis."
+
+- :dataset_name: SVHN
+
+  :paper_name: Multi-digit Number Recognition from Street View Imagery using Deep
+
+    Convolutional Neural Networks
+
+  :paper_year: '2014'
+
+  :paper_venue: ICLR
+
+  :result: 2.16%
+
+  :paper_pdf_url: http://openreview.net/document/0c571b22-f4b6-4d58-87e4-99d7de42a893#0c571b22-f4b6-4d58-87e4-99d7de42a893
+
+  :additional_information: |-
+
+    For classification of individual digits with a single network, error rate is 2.16%.
+
+    For classification of the entire digit sequence  (first paper doing this): error rate of 3.97%.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Network In Network
+
+  :paper_year: '2014'
+
+  :paper_venue: ICLR
+
+  :result: 91.2%
+
+  :paper_pdf_url: http://openreview.net/document/9b05a3bb-3a5e-49cb-91f7-0f482af65aea#9b05a3bb-3a5e-49cb-91f7-0f482af65aea
+
+  :additional_information: |-
+
+    The code for NIN available at
+
+    https://github.com/mavenlin/cuda-convnet
+
+
+
+    NIN + Dropout 89.6%
+
+    NIN + Dropout + Data Augmentation 91.2%
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Network in Network
+
+  :paper_year: '2014'
+
+  :paper_venue: ICLR
+
+  :result: 64.32%
+
+  :paper_pdf_url: http://openreview.net/document/9b05a3bb-3a5e-49cb-91f7-0f482af65aea#9b05a3bb-3a5e-49cb-91f7-0f482af65aea
+
+  :additional_information: |-
+
+    NIN + Dropout
+
+
+
+    The code for NIN available at
+
+    https://github.com/mavenlin/cuda-convnet
+
+- :dataset_name: SVHN
+
+  :paper_name: Network in Network
+
+  :paper_year: '2014'
+
+  :paper_venue: ICLR
+
+  :result: 2.35%
+
+  :paper_pdf_url: http://openreview.net/document/9b05a3bb-3a5e-49cb-91f7-0f482af65aea#9b05a3bb-3a5e-49cb-91f7-0f482af65aea
+
+  :additional_information: |-
+
+    NIN + Dropout
+
+
+
+    The code for NIN available at
+
+    https://github.com/mavenlin/cuda-convnet
+
+- :dataset_name: MNIST
+
+  :paper_name: Network in Network
+
+  :paper_year: '2014'
+
+  :paper_venue: ICLR
+
+  :result: 0.47%
+
+  :paper_pdf_url: http://openreview.net/document/9b05a3bb-3a5e-49cb-91f7-0f482af65aea#9b05a3bb-3a5e-49cb-91f7-0f482af65aea
+
+  :additional_information: |-
+
+    NIN + Dropout
+
+
+
+    The code for NIN available at
+
+    https://github.com/mavenlin/cuda-convnet
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Learning Smooth Pooling Regions for Visual Recognition
+
+  :paper_year: '2013'
+
+  :paper_venue: BMVC
+
+  :result: 80.02%
+
+  :paper_pdf_url: http://www.d2.mpi-inf.mpg.de/content/learning-smooth-pooling-regions-visual-recognition
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Learning Smooth Pooling Regions for Visual Recognition
+
+  :paper_year: '2013'
+
+  :paper_venue: BMVC
+
+  :result: 56.29%
+
+  :paper_pdf_url: http://www.d2.mpi-inf.mpg.de/content/learning-smooth-pooling-regions-visual-recognition
+
+  :additional_information: No data augmentation.
+
+- :dataset_name: MSRC-21
+
+  :paper_name: Large-Scale Semantic Co-Labeling of Image Sets
+
+  :paper_year: '2014'
+
+  :paper_venue: WACV
+
+  :result: 80.9% / 86.8%
+
+  :paper_pdf_url: http://www.cvc.uab.es/~jalvarez/research_cosegment.php
+
+- :dataset_name: Pascal VOC 2007 comp4
+
+  :paper_name: Multi-Component Models for Object Detection
+
+  :paper_year: '2012'
+
+  :paper_venue: ECCV
+
+  :result: 29.0 mAP
+
+  :paper_pdf_url: http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/galym_eccv2012.pdf
+
+  :additional_information: |-
+
+    20.9 Monolithic, 29.0 Multi-components.
+
+
+
+    Uses poselets and segmentation masks labels to build the clusters (thus comp4 not comp3).
+
+- :dataset_name: Pascal VOC 2010 comp4
+
+  :paper_name: Multi-Component Models for Object Detection
+
+  :paper_year: '2012'
+
+  :paper_venue: ECCV
+
+  :result: 33.1 mAP
+
+  :paper_pdf_url: http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/galym_eccv2012.pdf
+
+  :additional_information: |-
+
+    Multi-components result
+
+
+
+    Uses poselets and segmentation masks labels to build the clusters (thus comp4 not comp3).
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Improving Deep Neural Networks with Probabilistic Maxout Units
+
+  :paper_year: '2014'
+
+  :paper_venue: ICLR
+
+  :result: 90.61%
+
+  :paper_pdf_url: http://openreview.net/document/28d9c3ab-fe88-4836-b898-403d207a037c#28d9c3ab-fe88-4836-b898-403d207a037c
+
+  :additional_information: |-
+
+    88.65% without data augmentation.
+
+    90.61% when using data augmentation.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Improving Deep Neural Networks with Probabilistic Maxout Units
+
+  :paper_year: '2014'
+
+  :paper_venue: ICLR
+
+  :result: 61.86%
+
+  :paper_pdf_url: http://openreview.net/document/28d9c3ab-fe88-4836-b898-403d207a037c#28d9c3ab-fe88-4836-b898-403d207a037c
+
+- :dataset_name: MNIST
+
+  :paper_name: On Optimization Methods for Deep Learning
+
+  :paper_year: '2011'
+
+  :paper_venue: ICML
+
+  :result: 0.69%
+
+  :paper_pdf_url: http://ai.stanford.edu/~quocle/LeNgiCoaLahProNg11.pdf
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Discriminative Transfer Learning with Tree-based Priors
+
+  :paper_year: '2013'
+
+  :paper_venue: NIPS
+
+  :result: 63.15%
+
+  :paper_pdf_url: http://www.cs.toronto.edu/~nitish/treebasedpriors.pdf
+
+  :additional_information: |
+
+    The baseline "Convnet + max pooling + dropout" reaches 62.80% (without any tree prior).
+
+- :dataset_name: Pascal VOC 2007 comp4
+
+  :paper_name: Rich feature hierarchies for accurate object detection and semantic
+
+    segmentation
+
+  :paper_year: '2014'
+
+  :paper_venue: CVPR
+
+  :result: 58.5 mAP
+
+  :paper_pdf_url: http://www.cs.berkeley.edu/~rbg/papers/r-cnn-cvpr.pdf
+
+- :dataset_name: Pascal VOC 2010 comp4
+
+  :paper_name: Rich feature hierarchies for accurate object detection and semantic
+
+    segmentation
+
+  :paper_year: '2014'
+
+  :paper_venue: CVPR
+
+  :result: 53.7 mAP
+
+  :paper_pdf_url: http://www.cs.berkeley.edu/~rbg/papers/r-cnn-cvpr.pdf
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Learning Invariant Representations with Local Transformations
+
+  :paper_year: '2012'
+
+  :paper_venue: ICML
+
+  :result: 82.2%
+
+  :paper_pdf_url: http://icml.cc/2012/papers/659.pdf
+
+  :additional_information: K= 4,000
+
+- :dataset_name: STL-10
+
+  :paper_name: No more meta-parameter tuning in unsupervised sparse feature learning
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 61.0% (±0.58%)
+
+  :paper_pdf_url: http://arxiv.org/abs/1402.5766
+
+- :dataset_name: STL-10
+
+  :paper_name: Multi-Task Bayesian Optimization
+
+  :paper_year: '2013'
+
+  :paper_venue: NIPS
+
+  :result: 70.1% (±0.6%)
+
+  :paper_pdf_url: http://hips.seas.harvard.edu/files/swersky-multi-nips-2013.pdf
+
+  :additional_information: Also uses CIFAR-10 training data
+
+- :dataset_name: STL-10
+
+  :paper_name: Committees of deep feedforward networks trained with few data
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 68% (±0.55%)
+
+  :paper_pdf_url: http://arxiv.org/abs/1406.5947
+
+- :dataset_name: Pascal VOC 2010 comp3
+
+  :paper_name: Fisher and VLAD with FLAIR
+
+  :paper_year: '2014'
+
+  :paper_venue: CVPR
+
+  :result: 40.4 mAP
+
+  :paper_pdf_url: http://koen.me/research/flair/
+
+- :dataset_name: Pascal VOC 2011 comp3
+
+  :paper_name: Fisher and VLAD with FLAIR
+
+  :paper_year: '2014'
+
+  :paper_venue: CVPR
+
+  :result: 40.6 mAP
+
+  :paper_pdf_url: http://koen.me/research/flair/
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Lessons learned from manually classifying CIFAR-10
+
+  :paper_year: '2011'
+
+  :paper_venue: unpublished
+
+  :result: 94%
+
+  :paper_pdf_url: http://karpathy.github.io/2011/04/27/manually-classifying-cifar10/
+
+  :additional_information: Rough estimate from a single individual, over 400 training
+
+    images (~1% of training data).
+
+- :dataset_name: MNIST
+
+  :paper_name: Convolutional Kernel Networks
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 0.39%
+
+  :paper_pdf_url: http://arxiv.org/abs/1406.3332
+
+  :additional_information: No data augmentation.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Convolutional Kernel Networks
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 82.18%
+
+  :paper_pdf_url: http://arxiv.org/abs/1406.3332
+
+  :additional_information: No data augmentation.
+
+- :dataset_name: STL-10
+
+  :paper_name: Convolutional Kernel Networks
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 62.32%
+
+  :paper_pdf_url: http://arxiv.org/abs/1406.3332
+
+  :additional_information: No data augmentation.
+
+- :dataset_name: Pascal VOC 2007 comp4
+
+  :paper_name: Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition
+
+  :paper_year: '2014'
+
+  :paper_venue: ECCV
+
+  :result: 59.2 mAP
+
+  :paper_pdf_url: http://research.microsoft.com/en-us/um/people/kahe/eccv14sppnet/index.html
+
+  :additional_information: 20x faster than R-CNN.
+
+- :dataset_name: STL-10
+
+  :paper_name: 'Stable and Efficient Representation Learning with Nonnegativity Constraints '
+
+  :paper_year: '2014'
+
+  :paper_venue: ICML
+
+  :result: 67.9% (±0.6%)
+
+  :paper_pdf_url: http://jmlr.org/proceedings/papers/v32/line14.pdf
+
+  :additional_information: |-
+
+    3-layers + multi-dict.
+
+    67.5 ± 0.5 with 3-layers only.
+
+    64.6 ± 0.6 with 1-layers only.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: 'Stable and Efficient Representation Learning with Nonnegativity Constraints '
+
+  :paper_year: '2014'
+
+  :paper_venue: ICML
+
+  :result: 60.8%
+
+  :paper_pdf_url: http://jmlr.org/proceedings/papers/v32/line14.pdf
+
+  :additional_information: |-
+
+    3-layers + multi-dict.
+
+    57.7 with 3-layers only.
+
+    53.3 with 1-layers only.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'Stable and Efficient Representation Learning with Nonnegativity Constraints '
+
+  :paper_year: '2014'
+
+  :paper_venue: ICML
+
+  :result: 82.9%
+
+  :paper_pdf_url: http://jmlr.org/proceedings/papers/v32/line14.pdf
+
+  :additional_information: |-
+
+    Full data, 3-layers + multi-dict.
+
+    81.4 with 3-layers only.
+
+    78.0 with 1-layers only.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Deeply-Supervised Nets
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 91.78%
+
+  :paper_pdf_url: http://vcl.ucsd.edu/~sxie/2014/09/12/dsn-project/
+
+  :additional_information: "Single model, with data augmentation: 91.78%. \nWithout
+
+    data augmentation: 90.22%."
+
+- :dataset_name: MNIST
+
+  :paper_name: Deeply-Supervised Nets
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 0.39%
+
+  :paper_pdf_url: http://vcl.ucsd.edu/~sxie/2014/09/12/dsn-project/
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Deeply-Supervised Nets
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 65.43%
+
+  :paper_pdf_url: http://vcl.ucsd.edu/~sxie/2014/09/12/dsn-project/
+
+  :additional_information: Single model, without data augmentation.
+
+- :dataset_name: SVHN
+
+  :paper_name: Deeply-Supervised Nets
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 1.92%
+
+  :paper_pdf_url: http://vcl.ucsd.edu/~sxie/2014/09/12/dsn-project/
+
+- :dataset_name: MNIST
+
+  :paper_name: 'StrongNet: mostly unsupervised image recognition with strong neurons'
+
+  :paper_year: '2014'
+
+  :paper_venue: technical report on ALGLIB website
+
+  :result: 1.1%
+
+  :paper_pdf_url: http://www.alglib.net/articles/tr-20140813-strongnet.pdf
+
+  :additional_information: "StrongNet is a neural design which uses two innovations:
+
+    \n(a) \"strong neurons\" – highly nonlinear neurons with multiple outputs and
+
+    \n(b) \"mostly unsupervised architecture\" – backpropagation-free design with
+
+    all layers except for the last one being trained in a completely unsupervised
+
+    setting."
+
+- :dataset_name: MNIST
+
+  :paper_name: 'PCANet: A Simple Deep Learning Baseline for Image Classification?'
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 0.62%
+
+  :paper_pdf_url: http://arxiv.org/abs/1404.3606
+
+  :additional_information: No data augmentation.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'PCANet: A Simple Deep Learning Baseline for Image Classification?'
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 78.67%
+
+  :paper_pdf_url: http://arxiv.org/abs/1404.3606
+
+  :additional_information: |-
+
+    No data augmentation. Multiple feature scales combined.
+
+    77.14% when using only a single scale.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Deep Networks with Internal Selective Attention through Feedback Connections
+
+  :paper_year: '2014'
+
+  :paper_venue: NIPS
+
+  :result: 90.78%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/5276-deep-networks-with-internal-selective-attention-through-feedback-connections.pdf
+
+  :additional_information: No data augmentation
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Deep Networks with Internal Selective Attention through Feedback Connections
+
+  :paper_year: '2014'
+
+  :paper_venue: NIPS
+
+  :result: 66.22%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/5276-deep-networks-with-internal-selective-attention-through-feedback-connections.pdf
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Spatially-sparse convolutional neural networks
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 93.72%
+
+  :paper_pdf_url: http://arxiv.org/abs/1409.6070
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Spatially-sparse convolutional neural networks
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 75.7%
+
+  :paper_pdf_url: http://arxiv.org/abs/1409.6070
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'Striving for Simplicity: The All Convolutional Net'
+
+  :paper_year: '2015'
+
+  :paper_venue: ICLR
+
+  :result: 95.59%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1412.6806.pdf
+
+  :additional_information: 90.92% without data augmentation, 92.75% with small data
+
+    augmentation, 95.59% when using agressive data augmentation and larger network.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: 'Striving for Simplicity: The All Convolutional Net'
+
+  :paper_year: '2014'
+
+  :paper_venue: ICLR
+
+  :result: 66.29%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1412.6806.pdf
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Fractional Max-Pooling
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 96.53%
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.6071
+
+  :additional_information: |-
+
+    Uses 100 passes at test time. Reaches 95.5% when using a single pass at test time, and 96.33% when using 12 passes..
+
+    Uses data augmentation during training.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Fractional Max-Pooling
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 73.61%
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.6071
+
+  :additional_information: |-
+
+    Uses 12 passes at test time. Reaches 68.55% when using a single pass at test time.
+
+    Uses data augmentation during training.
+
+- :dataset_name: MNIST
+
+  :paper_name: Fractional Max-Pooling
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 0.32%
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.6071
+
+  :additional_information: Uses 12 passes at test time. Reaches 0.5% when using a
+
+    single pass at test time.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Recurrent Convolutional Neural Network for Object Recognition
+
+  :paper_year: '2015'
+
+  :paper_venue: CVPR
+
+  :result: 92.91%
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_004.pdf
+
+  :additional_information: Reaches 91.31%  without data augmentation.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Recurrent Convolutional Neural Network for Object Recognition
+
+  :paper_year: '2015'
+
+  :paper_venue: CVPR
+
+  :result: 68.25%
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_004.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: Recurrent Convolutional Neural Network for Object Recognition
+
+  :paper_year: '2015'
+
+  :paper_venue: CVPR
+
+  :result: 0.31%
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_004.pdf
+
+- :dataset_name: SVHN
+
+  :paper_name: Recurrent Convolutional Neural Network for Object Recognition
+
+  :paper_year: '2015'
+
+  :paper_venue: CVPR
+
+  :result: 1.77%
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_004.pdf
+
+  :additional_information: Without data augmentation
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Fast and Accurate Deep Network Learning by Exponential Linear Units
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 93.45%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.07289
+
+  :additional_information: Without data augmentation.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Fast and Accurate Deep Network Learning by Exponential Linear Units
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 75.72%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.07289
+
+  :additional_information: Without data augmentation.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Competitive Multi-scale Convolution
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 93.13%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.05635
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Competitive Multi-scale Convolution
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 72.44%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.05635
+
+- :dataset_name: MNIST
+
+  :paper_name: Competitive Multi-scale Convolution
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 0.33%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.05635
+
+- :dataset_name: SVHN
+
+  :paper_name: Competitive Multi-scale Convolution
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 1.76%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.05635
+
+- :dataset_name: STL-10
+
+  :paper_name: Convolutional Clustering for Unsupervised Learning
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 74.10%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.06241
+
+  :additional_information: 3 layers + multi dict. With 2 layers, reaches 71.4%
+
+- :dataset_name: MNIST
+
+  :paper_name: Convolutional Clustering for Unsupervised Learning
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 1.40%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.06241
+
+  :additional_information: 2 layers + multi dict.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Deep Convolutional Neural Networks as Generic Feature Extractors
+
+  :paper_year: '2015'
+
+  :paper_venue: IJCNN
+
+  :result: 67.68%
+
+  :paper_pdf_url: http://www.isip.uni-luebeck.de/fileadmin/uploads/tx_wapublications/hertel_ijcnn_2015.pdf
+
+  :additional_information: feature extraction part of convnet is trained on imagenet
+
+    (external training data), classification part is trained on cifar-100
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Deep Convolutional Neural Networks as Generic Feature Extractors
+
+  :paper_year: '2015'
+
+  :paper_venue: IJCNN
+
+  :result: 89.14%
+
+  :paper_pdf_url: http://www.isip.uni-luebeck.de/fileadmin/uploads/tx_wapublications/hertel_ijcnn_2015.pdf
+
+  :additional_information: feature extraction part of convnet is trained on imagenet
+
+    (external training data), classification part is trained on cifar-10
+
+- :dataset_name: MNIST
+
+  :paper_name: Deep Convolutional Neural Networks as Generic Feature Extractors
+
+  :paper_year: '2015'
+
+  :paper_venue: IJCNN
+
+  :result: 0.46%
+
+  :paper_pdf_url: http://www.isip.uni-luebeck.de/fileadmin/uploads/tx_wapublications/hertel_ijcnn_2015.pdf
+
+  :additional_information: feature extraction part of convnet is trained on imagenet
+
+    (external training data), classification part is trained on cifar-10
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Deep Residual Learning for Image Recognition
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 93.57%
+
+  :paper_pdf_url: http://arxiv.org/abs/1512.03385
+
+  :additional_information: Best performance reached with 110 layers. Using 1202 layers
+
+    leads to 92.07%, 56 layers lead to 93.03%.
+
+- :dataset_name: MNIST
+
+  :paper_name: Training Very Deep Networks
+
+  :paper_year: '2015'
+
+  :paper_venue: NIPS
+
+  :result: 0.45%
+
+  :paper_pdf_url: http://people.idsia.ch/~rupesh/very_deep_learning/
+
+  :additional_information: Best result selected on test set. 0.46% average over multiple
+
+    trained models.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Training Very Deep Networks
+
+  :paper_year: '2015'
+
+  :paper_venue: NIPS
+
+  :result: 92.40%
+
+  :paper_pdf_url: http://people.idsia.ch/~rupesh/very_deep_learning/
+
+  :additional_information: Best result selected on test set. 92.31% average over multiple
+
+    trained models.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Training Very Deep Networks
+
+  :paper_year: '2015'
+
+  :paper_venue: NIPS
+
+  :result: 67.76%
+
+  :paper_pdf_url: http://people.idsia.ch/~rupesh/very_deep_learning/
+
+  :additional_information: Best result selected on test set. 67.61% average over multiple
+
+    trained models.
+
+- :dataset_name: STL-10
+
+  :paper_name: Stacked What-Where Auto-encoders
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 74.33%
+
+  :paper_pdf_url: http://arxiv.org/abs/1506.02351
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Stacked What-Where Auto-encoders
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 92.23%
+
+  :paper_pdf_url: http://arxiv.org/abs/1506.02351
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Stacked What-Where Auto-encoders
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 69.12%
+
+  :paper_pdf_url: http://arxiv.org/abs/1506.02351
+
+- :dataset_name: STL-10
+
+  :paper_name: Discriminative Unsupervised Feature Learning with Convolutional Neural
+
+    Networks
+
+  :paper_year: '2014'
+
+  :paper_venue: NIPS
+
+  :result: 72.8% (±0.4%)
+
+  :paper_pdf_url: http://papers.nips.cc/paper/5548-discriminative-unsupervised-feature-learning-with-convolutional-neural-networks.pdf
+
+  :additional_information: Unsupervised feature learning + linear SVM
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Discriminative Unsupervised Feature Learning with Convolutional Neural
+
+    Networks
+
+  :paper_year: '2014'
+
+  :paper_venue: NIPS
+
+  :result: 82%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/5548-discriminative-unsupervised-feature-learning-with-convolutional-neural-networks.pdf
+
+  :additional_information: Unsupervised feature learning + linear SVM
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Batch-normalized Maxout Network in Network
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 93.25%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.02583
+
+  :additional_information: "(k=5 maxout pieces in each maxout unit). \nReaches 92.15%
+
+    without data augmentation."
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Batch-normalized Maxout Network in Network
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 71.14%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.02583
+
+  :additional_information: "(k=5 maxout pieces in each maxout unit)."
+
+- :dataset_name: MNIST
+
+  :paper_name: Batch-normalized Maxout Network in Network
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 0.24%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.02583
+
+  :additional_information: "(k=5 maxout pieces in each maxout unit)."
+
+- :dataset_name: SVHN
+
+  :paper_name: Batch-normalized Maxout Network in Network
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 1.81%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.02583
+
+  :additional_information: "(k=5 maxout pieces in each maxout unit)."
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'Universum Prescription: Regularization using Unlabeled Data'
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 93.34%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.03719
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: 'Universum Prescription: Regularization using Unlabeled Data'
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 67.16%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.03719
+
+- :dataset_name: MNIST
+
+  :paper_name: Multi-Loss Regularized Deep Neural Network
+
+  :paper_year: '2015'
+
+  :paper_venue: CSVT
+
+  :result: 0.42%
+
+  :paper_pdf_url: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7258343
+
+  :additional_information: Based on NiN architecture.
+
+- :dataset_name: SVHN
+
+  :paper_name: Multi-Loss Regularized Deep Neural Network
+
+  :paper_year: '2015'
+
+  :paper_venue: CSVT
+
+  :result: 1.92%
+
+  :paper_pdf_url: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7258343
+
+  :additional_information: Based on NiN architecture.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Multi-Loss Regularized Deep Neural Network
+
+  :paper_year: '2015'
+
+  :paper_venue: CSVT
+
+  :result: 68.53%
+
+  :paper_pdf_url: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7258343
+
+  :additional_information: With data augmentation, 65.82% without. Based on NiN architecture.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Multi-Loss Regularized Deep Neural Network
+
+  :paper_year: '2015'
+
+  :paper_venue: CSVT
+
+  :result: 91.88%
+
+  :paper_pdf_url: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7258343
+
+  :additional_information: With data augmentation, 90.45% without. Based on NiN architecture.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Speeding up Automatic Hyperparameter Optimization of Deep Neural Networks
+
+    by Extrapolation of Learning Curves
+
+  :paper_year: '2015'
+
+  :paper_venue: IJCAI
+
+  :result: 91.19%
+
+  :paper_pdf_url: http://aad.informatik.uni-freiburg.de/papers/15-IJCAI-Extrapolation_of_Learning_Curves.pdf
+
+  :additional_information: Based on the "all convolutional" architecture. which reaches
+
+    90.92% by itself.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: On the Importance of Normalisation Layers in Deep Learning with Piecewise
+
+    Linear Activation Units
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 91.48%
+
+  :paper_pdf_url: http://arxiv.org/abs/1508.00330
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: On the Importance of Normalisation Layers in Deep Learning with Piecewise
+
+    Linear Activation Units
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 70.80%
+
+  :paper_pdf_url: http://arxiv.org/abs/1508.00330
+
+- :dataset_name: MNIST
+
+  :paper_name: On the Importance of Normalisation Layers in Deep Learning with Piecewise
+
+    Linear Activation Units
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 0.31%
+
+  :paper_pdf_url: http://arxiv.org/abs/1508.00330
+
+- :dataset_name: SVHN
+
+  :paper_name: On the Importance of Normalisation Layers in Deep Learning with Piecewise
+
+    Linear Activation Units
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 1.97%
+
+  :paper_pdf_url: http://arxiv.org/abs/1508.00330
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: cifar.torch
+
+  :paper_year: '2015'
+
+  :paper_venue: unpublished
+
+  :result: 92.45%
+
+  :paper_pdf_url: http://torch.ch/blog/2015/07/30/cifar.html
+
+  :additional_information: Code available at https://github.com/szagoruyko/cifar.torch
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Spectral Representations for Convolutional Neural Networks
+
+  :paper_year: '2015'
+
+  :paper_venue: NIPS
+
+  :result: 91.40%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/5649-spectral-representations-for-convolutional-neural-networks.pdf
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Spectral Representations for Convolutional Neural Networks
+
+  :paper_year: '2015'
+
+  :paper_venue: NIPS
+
+  :result: 68.40%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/5649-spectral-representations-for-convolutional-neural-networks.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: 'APAC: Augmented PAttern Classification with Neural Networks'
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 0.23%
+
+  :paper_pdf_url: http://arxiv.org/abs/1505.03229
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'APAC: Augmented PAttern Classification with Neural Networks'
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 89.67%
+
+  :paper_pdf_url: http://arxiv.org/abs/1505.03229
+
+- :dataset_name: MNIST
+
+  :paper_name: 'ReNet: A Recurrent Neural Network Based Alternative to Convolutional
+
+    Networks'
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 0.45%
+
+  :paper_pdf_url: http://arxiv.org/abs/1505.00393
+
+- :dataset_name: SVHN
+
+  :paper_name: 'ReNet: A Recurrent Neural Network Based Alternative to Convolutional
+
+    Networks'
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 2.38%
+
+  :paper_pdf_url: http://arxiv.org/abs/1505.00393
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'ReNet: A Recurrent Neural Network Based Alternative to Convolutional
+
+    Networks'
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 87.65%
+
+  :paper_pdf_url: http://arxiv.org/abs/1505.00393
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Scalable Bayesian Optimization Using Deep Neural Networks
+
+  :paper_year: '2015'
+
+  :paper_venue: ICML
+
+  :result: 93.63%
+
+  :paper_pdf_url: http://arxiv.org/abs/1502.05700
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Scalable Bayesian Optimization Using Deep Neural Networks
+
+  :paper_year: '2015'
+
+  :paper_venue: ICML
+
+  :result: 72.60%
+
+  :paper_pdf_url: http://arxiv.org/abs/1502.05700
+
+- :dataset_name: MNIST
+
+  :paper_name: Deep Fried Convnets
+
+  :paper_year: '2015'
+
+  :paper_venue: ICCV
+
+  :result: 0.71%
+
+  :paper_pdf_url: http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Yang_Deep_Fried_Convnets_ICCV_2015_paper.pdf
+
+  :additional_information: Uses about 10x fewer parameters than the reference model,
+
+    which reaches 0.87%.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: An Analysis of Unsupervised Pre-training in Light of Recent Advances
+
+  :paper_year: '2015'
+
+  :paper_venue: ICLR
+
+  :result: 86.70 %
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.6597
+
+  :additional_information: Unsupervised pre-training, with supervised fine-tuning.
+
+    Uses dropout and data-augmentation.
+
+- :dataset_name: STL-10
+
+  :paper_name: An Analysis of Unsupervised Pre-training in Light of Recent Advances
+
+  :paper_year: '2015'
+
+  :paper_venue: ICLR
+
+  :result: 70.20 % (±0.7 %)
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.6597
+
+  :additional_information: Unsupervised pre-training, with supervised fine-tuning.
+
+    Uses dropout and data-augmentation.
+
+- :dataset_name: MNIST
+
+  :paper_name: 'Generalizing Pooling Functions in Convolutional Neural Networks: Mixed,
+
+    Gated, and Tree'
+
+  :paper_year: '2016'
+
+  :paper_venue: AISTATS
+
+  :result: 0.29%
+
+  :paper_pdf_url: http://arxiv.org/abs/1509.08985
+
+  :additional_information: Single model without data augmentation
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'Generalizing Pooling Functions in Convolutional Neural Networks: Mixed,
+
+    Gated, and Tree'
+
+  :paper_year: '2016'
+
+  :paper_venue: AISTATS
+
+  :result: 93.95%
+
+  :paper_pdf_url: http://arxiv.org/abs/1509.08985
+
+  :additional_information: Single model with data augmentation, 92.38% without.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: 'Generalizing Pooling Functions in Convolutional Neural Networks: Mixed,
+
+    Gated, and Tree'
+
+  :paper_year: '2016'
+
+  :paper_venue: AISTATS
+
+  :result: 67.63%
+
+  :paper_pdf_url: http://arxiv.org/abs/1509.08985
+
+  :additional_information: Single model without data augmentation
+
+- :dataset_name: SVHN
+
+  :paper_name: 'Generalizing Pooling Functions in Convolutional Neural Networks: Mixed,
+
+    Gated, and Tree'
+
+  :paper_year: '2016'
+
+  :paper_venue: AISTATS
+
+  :result: 1.69%
+
+  :paper_pdf_url: http://arxiv.org/abs/1509.08985
+
+  :additional_information: Single model without data augmentation
+
+- :dataset_name: STL-10
+
+  :paper_name: 'C-SVDDNet: An Effective Single-Layer Network for Unsupervised Feature
+
+    Learning'
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 68.23% ± 0.5
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.7259
+
+- :dataset_name: MNIST
+
+  :paper_name: 'C-SVDDNet: An Effective Single-Layer Network for Unsupervised Feature
+
+    Learning'
+
+  :paper_year: '2014'
+
+  :paper_venue: arXiv
+
+  :result: 0.35%
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.7259
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Deep Representation Learning with Target Coding
+
+  :paper_year: '2015'
+
+  :paper_venue: AAAI
+
+  :result: 64.77%
+
+  :paper_pdf_url: http://personal.ie.cuhk.edu.hk/~ccloy/files/aaai_2015_target_coding.pdf
+
+- :dataset_name: STL-10
+
+  :paper_name: Deep Representation Learning with Target Coding
+
+  :paper_year: '2015'
+
+  :paper_venue: AAAI
+
+  :result: 73.15%
+
+  :paper_pdf_url: http://personal.ie.cuhk.edu.hk/~ccloy/files/aaai_2015_target_coding.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: Deep Representation Learning with Target Coding
+
+  :paper_year: '2015'
+
+  :paper_venue: AAAI
+
+  :result: 14.53%
+
+  :paper_pdf_url: http://personal.ie.cuhk.edu.hk/~ccloy/files/aaai_2015_target_coding.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: Enhanced Image Classification With a Fast-Learning Shallow Convolutional
+
+    Neural Network
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 0.37%
+
+  :paper_pdf_url: http://arxiv.org/abs/1503.04596
+
+  :additional_information: No data augmentation
+
+- :dataset_name: SVHN
+
+  :paper_name: Enhanced Image Classification With a Fast-Learning Shallow Convolutional
+
+    Neural Network
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 3.96%
+
+  :paper_pdf_url: http://arxiv.org/abs/1503.04596
+
+  :additional_information: No data augmentation
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Enhanced Image Classification With a Fast-Learning Shallow Convolutional
+
+    Neural Network
+
+  :paper_year: '2015'
+
+  :paper_venue: arXiv
+
+  :result: 75.86%
+
+  :paper_pdf_url: http://arxiv.org/abs/1503.04596
+
+  :additional_information: No data augmentation
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: 'HD-CNN: Hierarchical Deep Convolutional Neural Network for Large Scale
+
+    Visual Recognition'
+
+  :paper_year: '2015'
+
+  :paper_venue: ICCV
+
+  :result: 67.38%
+
+  :paper_pdf_url: https://sites.google.com/site/homepagezhichengyan/home/hdcnn
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Learning Activation Functions to Improve Deep Neural Networks
+
+  :paper_year: '2015'
+
+  :paper_venue: ICLR
+
+  :result: 92.49%
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.6830
+
+  :additional_information: |-
+
+    Uses an adaptive piecewise linear activation function.
+
+    92.49% accuracy with data augmentation and 90.41% accuracy without data augmentation.
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Learning Activation Functions to Improve Deep Neural Networks
+
+  :paper_year: '2015'
+
+  :paper_venue: ICLR
+
+  :result: 69.17%
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.6830
+
+  :additional_information: |-
+
+    Uses a piecewise linear activation function.
+
+    69.17% accuracy with data augmentation and 65.6% accuracy without data augmentation.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Learning with Recursive Perceptual Representations
+
+  :paper_year: '2012'
+
+  :paper_venue: NIPS
+
+  :result: 79.7%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/4747-learning-with-recursive-perceptual-representations
+
+  :additional_information: |
+
+    Code size 1600.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Object Recognition with Hierarchical Kernel Descriptors
+
+  :paper_year: '2011'
+
+  :paper_venue: CVPR
+
+  :result: 80%
+
+  :paper_pdf_url: http://research.cs.washington.edu/istc/lfb/paper/cvpr11.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: 'Hybrid Orthogonal Projection and Estimation (HOPE): A New Framework
+
+    to Probe and Learn Neural Networks'
+
+  :paper_year: '2015'
+
+  :paper_venue: " arXiv"
+
+  :result: 0.40%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1502.00702.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: Supervised Translation-Invariant Sparse Coding
+
+  :paper_year: '2010'
+
+  :paper_venue: CVPR
+
+  :result: 0.84%
+
+  :paper_pdf_url: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.206.339&rep=rep1&type=pdf
+
+  :additional_information: Uses sparse coding + svm.
+
+- :dataset_name: MNIST
+
+  :paper_name: Handwritten Digit Recognition using Convolutional Neural Networks and
+
+    Gabor Filters
+
+  :paper_year: '2003'
+
+  :paper_venue: ICCI
+
+  :result: 0.68%
+
+  :paper_pdf_url: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.133.6559&rep=rep1&type=pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: Explaining and Harnessing Adversarial Examples
+
+  :paper_year: '2015'
+
+  :paper_venue: ICLR
+
+  :result: 0.78%
+
+  :paper_pdf_url: http://arxiv.org/abs/1412.6572
+
+  :additional_information: permutation invariant network used
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: Empirical Evaluation of Rectified Activations in Convolution Network
+
+  :paper_year: '2015'
+
+  :paper_venue: ICML workshop
+
+  :result: 88.80%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1505.00853.pdf
+
+  :additional_information: Using Randomized Leaky ReLU
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: Empirical Evaluation of Rectified Activations in Convolution Network
+
+  :paper_year: '2015'
+
+  :paper_venue: ICML workshop
+
+  :result: 59.75%
+
+  :paper_pdf_url: http://arxiv.org/pdf/1505.00853.pdf
+
+  :additional_information: Using Randomized Leaky ReLU
+
+- :dataset_name: CIFAR-100
+
+  :paper_name: All you need is a good init
+
+  :paper_year: '2015'
+
+  :paper_venue: ICLR
+
+  :result: 72.34%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.06422
+
+  :additional_information: Using RMSProp optimizer
+
+- :dataset_name: 'MNIST '
+
+  :paper_name: All you need is a good init
+
+  :paper_year: '2015'
+
+  :paper_venue: ICLR
+
+  :result: 0.38%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.06422
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: All you need is a good init
+
+  :paper_year: '2016'
+
+  :paper_venue: ICLR
+
+  :result: 94.16%
+
+  :paper_pdf_url: http://arxiv.org/abs/1511.06422
+
+  :additional_information: Only mirroring and random shifts, no extreme data augmentation.
+
+    Uses thin deep residual net with maxout activations.
+
+- :dataset_name: CIFAR-10
+
+  :paper_name: 'BinaryConnect: Training Deep Neural Networks with binary weights during
+
+    propagations'
+
+  :paper_year: '2015'
+
+  :paper_venue: NIPS
+
+  :result: 91.73%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/5647-binaryconnect-training-deep-neural-networks-with-binary-weights-during-propagations.pdf
+
+  :additional_information: These results were obtained without using any data-augmentation.
+
+- :dataset_name: SVHN
+
+  :paper_name: 'BinaryConnect: Training Deep Neural Networks with binary weights during
+
+    propagations'
+
+  :paper_year: '2015'
+
+  :paper_venue: NIPS
+
+  :result: 2.15%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/5647-binaryconnect-training-deep-neural-networks-with-binary-weights-during-propagations.pdf
+
+- :dataset_name: MNIST
+
+  :paper_name: 'BinaryConnect: Training Deep Neural Networks with binary weights during
+
+    propagations'
+
+  :paper_year: '2015'
+
+  :paper_venue: NIPS
+
+  :result: 1.01%
+
+  :paper_pdf_url: http://papers.nips.cc/paper/5647-binaryconnect-training-deep-neural-networks-with-binary-weights-during-propagations.pdf
+
+  :additional_information: Using 50% dropout

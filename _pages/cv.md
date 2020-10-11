@@ -11,16 +11,16 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.Sc. in Mathematics and Computer Science, University of Science, Ho Chi Minh City, VIETNAM, 2013
+* M.Sc. in Computer Science, Tokyo University of Agriculture and Technology, Tokyo, JAPAN, 2017
+* Ph.D in Computer Science, Tokyo University of Agriculture and Technology, Tokyo, JAPAN, 2020
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2013 Oct. ~ 2014 Sep.: Teaching Assistant
+  * University of Science, Ho Chi Minh City
+  * Duties included: Guiding students for practicing programming on Datastructure&Algorithms, Discrete Mathematics, Java, 
+  * Supervisor: Dr. Pham The Bao
 
 * Fall 2015: Research Assistant
   * Github University
@@ -38,22 +38,22 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed%}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
-  <ul>{% for post in site.talks %}
+  <ul>{% for post in site.talks reversed%}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
+  <ul>{% for post in site.teaching reversed%}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->

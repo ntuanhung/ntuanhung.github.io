@@ -3,18 +3,27 @@
 
 # # Publications markdown generator for academicpages
 # 
-# Takes a TSV of publications with metadata and converts them for use with [academicpages.github.io](academicpages.github.io). This is an interactive Jupyter notebook, with the core python code in publications.py. Run either from the `markdown_generator` folder after replacing `publications.tsv` with one that fits your format.
+# Takes a TSV of publications with metadata and converts them for use with 
+# [academicpages.github.io](academicpages.github.io). 
 # 
-# TODO: Make this work with BibTex and other databases of citations, rather than Stuart's non-standard TSV format and citation style.
+# This is an interactive Jupyter notebook, with the core python code in publications.py. 
+# Run either from the `markdown_generator` folder after replacing `publications.tsv` 
+# with one that fits your format.
+# 
+# TODO: Make this work with BibTex and other databases of citations, rather than 
+# Stuart's non-standard TSV format and citation style.
 # 
 
 # ## Data format
 # 
-# The TSV needs to have the following columns: pub_date, title, venue, excerpt, citation, site_url, and paper_url, with a header at the top. 
+# The TSV needs to have the following columns: pub_date, title, venue, excerpt, citation, 
+# site_url, and paper_url, with a header at the top. 
 # 
 # - `excerpt` and `paper_url` can be blank, but the others must have values. 
 # - `pub_date` must be formatted as YYYY-MM-DD.
-# - `url_slug` will be the descriptive part of the .md file and the permalink URL for the page about the paper. The .md file will be `YYYY-MM-DD-[url_slug].md` and the permalink will be `https://[yourdomain]/publications/YYYY-MM-DD-[url_slug]`
+# - `url_slug` will be the descriptive part of the .md file and the permalink URL for 
+# the page about the paper. The .md file will be `YYYY-MM-DD-[url_slug].md` 
+# and the permalink will be `https://[yourdomain]/publications/YYYY-MM-DD-[url_slug]`
 
 
 # ## Import pandas
@@ -28,9 +37,12 @@ import pandas as pd
 
 # ## Import TSV
 # 
-# Pandas makes this easy with the read_csv function. We are using a TSV, so we specify the separator as a tab, or `\t`.
+# Pandas makes this easy with the read_csv function. 
+# We are using a TSV, so we specify the separator as a tab, or `\t`.
 # 
-# I found it important to put this data in a tab-separated values format, because there are a lot of commas in this kind of data and comma-separated values can get messed up. However, you can modify the import statement, as pandas also has read_excel(), read_json(), and others.
+# I found it important to put this data in a tab-separated values format, 
+# because there are a lot of commas in this kind of data and comma-separated values can get messed up. 
+# However, you can modify the import statement, as pandas also has read_excel(), read_json(), and others.
 
 # In[3]:
 

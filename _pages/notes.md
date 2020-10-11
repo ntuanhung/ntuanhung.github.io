@@ -34,6 +34,27 @@ redirect_from:
 ## Resources
  * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
 
+## HTML using Template Tags 
+This syntax is based on jinja, known as Template Engine system. An example code as follows:
+
+
+### Benefits of using template engines include:
+
++ Encouraging organization of source code into operationally-distinct layers (see e.g., MVC)
++ Enhancing productivity by reducing unnecessary reproduction of effort
++ Enhancing teamwork by allowing separation of work based on skill-set (e.g., artistic vs. technical)
+
+
+### Typical features
+
+Template engines typically include features common to most high-level programming languages, with an emphasis on features for processing plain text. Such features include:
+
++ variables and functions
++ text replacement
++ file inclusion (or transclusion)
++ conditional evaluation and loops
+
+
 ## Markdown guide
 
 ### Header three
