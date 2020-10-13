@@ -20,15 +20,19 @@ from pybtex.database.input import bibtex
 import pybtex.database.input.bibtex 
 import pandas as pd
 from time import strptime
-import string
-import html
-import os
-import re
+import string, html, os, re, codecs
 
 bib_filepath = "202010_HUNG_papers.bib"
 
 journal_info = pd.read_csv("journal_info.tsv", sep="\t", header=0)
 print(journal_info, type(journal_info))
+
+codebase_ref = pd.read_csv("codebase_ref.tsv", sep="\t", header=0)
+print(codebase_ref, type(codebase_ref))
+
+database_ref = pd.read_csv("database_ref.tsv", sep="\t", header=0)
+print(database_ref, type(database_ref))
+
 # print(journal_info.columns)
 # print(journal_info.loc['Pattern Recognition']['wos_quartile'])
 # print(journal_info.loc['Pattern Recognition']['impact_factor'])
@@ -138,9 +142,10 @@ def parse_fields_by_paper_type(target_type, paper_entry):
 
         
         ## YAML variables
-        md = "---\ntitle: \""   + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + '"\n'
+        md = "---\nlayout: 'publication'" 
+        md += "\ntitle: \""   + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + "\""
         
-        md += """collection: """ +  publist[pubsource]["collection"]["name"]
+        md += """\ncollection: """ +  publist[pubsource]["collection"]["name"]
 
         md += """\npermalink: """ + publist[pubsource]["collection"]["permalink"]  + html_filename
         
@@ -173,6 +178,11 @@ def parse_fields_by_paper_type(target_type, paper_entry):
                 md += "\nwosq: '" + wos_quartile + "'"
             if impact_factor.strip()!="":
                 md += "\nimpactfactor: '" + impact_factor + "'"
+        
+        
+
+        if "abstract" in b.keys() and b["abstract"].strip()!="":
+            md += "\nabstract: '" + html_escape(b["abstract"].strip()) + "'"
 
         md += "\ncitation: '" + html_escape(citation) + "'"
 
@@ -183,16 +193,32 @@ def parse_fields_by_paper_type(target_type, paper_entry):
         if note:
             md += "\n" + html_escape(b["note"]) + "\n"
 
+        md += "\nAccess to "
         if url:
-            md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
+            md += "[paper](" + b["url"] + "){:target=\"_blank\"}"
         else:
-            md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
-
+            md += "[paper](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"}"
         
+        if paper_entry.key in codebase_ref.index:
+            # found = df[df['Column'].str.contains('Text_to_search')]
+            # print(found.count())
+            codeurl = codebase_ref.loc[paper_entry.key.strip()]["url"]
+            md += " [code](" + codeurl + "){:target=\"_blank\"}" 
+            print("Detected codeurl.")
 
+        if paper_entry.key in database_ref.index:
+            # found = df[df['Column'].str.contains('Text_to_search')]
+            # print(found.count())
+            dataurl = database_ref.loc[paper_entry.key.strip()]["url"]
+            md += " [data](" + dataurl + "){:target=\"_blank\"}" 
+            print("Detected dataurl.")
+
+        # if "codeurl" in b.keys() and b["codeurl"].strip()!="":
+        #     md += " [code](" + b["codeurl"] + "){:target=\"_blank\"}" 
+        
         md_filename = os.path.basename(md_filename)
 
-        with open("../_publications/" + md_filename, 'w') as f:
+        with codecs.open("../_publications/" + md_filename, 'w', encoding="utf8") as f:
             f.write(md)
         print(f'SUCESSFULLY PARSED {bib_id}: \"', paper_entry.key, b["title"][:60],"..."*(len(b['title'])>60),"\"")
     # field may not exist for a reference

@@ -1,4 +1,5 @@
-wos_quartile	impact_factor
-Pattern Recognition	Q1	7.255 (2019)
-Pattern Recognition Letters	Q1	3.255 (2019)
-SN Computer Science	 	 
+wos_quartile	impact_factor	avg_5yrs_if
+IEEE Transactions on Pattern Analysis and Machine Intelligence	Q1	17.861 (2019)	15.395 (2019)
+Pattern Recognition	Q1	7.196 (2019)	6.280 (2019)
+Pattern Recognition Letters	Q2	3.255 (2019)	3.077 (2019)
+SN Computer Science	 	 	 

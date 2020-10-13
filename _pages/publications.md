@@ -18,7 +18,7 @@ author_profile: true
 
 {% for post in site.publications reversed %}
   {% if post.papertype == "article" %}
-    {% include archive-single-article.html %}
+    {% include archive-single-publication.html %}
   {% endif %}
 {% endfor %}
 
@@ -27,7 +27,7 @@ author_profile: true
 
 {% for post in site.publications reversed %}
   {% if post.papertype == "proceedings" %}
-    {% include archive-single.html %}
+    {% include archive-single-publication.html %}
   {% endif %}
 {% endfor %}
 
@@ -36,7 +36,7 @@ author_profile: true
 
 {% for post in site.publications reversed %}
   {% if post.papertype == "book" or post.papertype == "chapter" or post.papertype == "section" %}
-    {% include archive-single.html %}
+    {% include archive-single-publication.html %}
   {% endif %}
 {% endfor %}
 
@@ -45,6 +45,6 @@ author_profile: true
 
 {% for post in site.publications reversed %}
   {% if post.papertype == "techreport" %}
-    {% include archive-single.html %}
+    {% include archive-single-publication.html %}
   {% endif %}
 {% endfor %}

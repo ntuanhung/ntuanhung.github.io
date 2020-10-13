@@ -7,6 +7,8 @@ redirect_from:
   - /notes.html
 ---
 
+# Mimimal-mistake notes
+
 ## Locations of key files/directories
 
 * Basic config options: _config.yml
@@ -54,8 +56,9 @@ Template engines typically include features common to most high-level programmin
 + file inclusion (or transclusion)
 + conditional evaluation and loops
 
+# Markdown notes
 
-## Markdown guide
+## Markdown headers
 
 ### Header three
 
@@ -146,6 +149,7 @@ Make any link standout more when applying the `.btn` class.
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
 
+
 ## HTML Tags
 
 ### Address Tag
@@ -221,3 +225,28 @@ Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should 
 ### Variable Tag
 
 This allows you to denote <var>variables</var>.
+
+# LaTeX notes
+
+## IEEETrans guidance
+
++ General guidance https://www.icmu.org/icmu2014/files/IEEEtran_HOWTO.pdf
++ Greek synbols https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols
+
+### Cross referencing
+https://www.overleaf.com/learn/latex/Cross%20referencing%20sections,%20equations%20and%20floats#Referencing_equations.2C_figures_and_tables
+
+### List and Numbering
++ https://www.overleaf.com/learn/latex/lists#Ordered_lists_2
++ https://tex.stackexchange.com/questions/54055/using-lower-case-roman-numerals-in-enumerate-lists
+
+### Figure
++ Import PNG image https://tex.stackexchange.com/questions/329186/inserting-png-file-as-is
++ Subfloat using https://tex.stackexchange.com/questions/119984/subfigures-side-by-side-with-captions
++ Using \columnwidth \pagewidth \textwidth for resize figure.
+
+### Hyperlink
++ https://tex.stackexchange.com/questions/85553/undefined-control-sequence-url-error
+
+### Bibtex
++ https://www.overleaf.com/learn/latex/bibliography_management_with_bibtex

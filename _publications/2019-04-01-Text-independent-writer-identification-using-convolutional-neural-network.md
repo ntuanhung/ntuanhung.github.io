@@ -1,4 +1,5 @@
 ---
+layout: 'publication'
 title: "Text-independent writer identification using convolutional neural network"
 collection: publications
 permalink: /publication/2019-04-01-Text-independent-writer-identification-using-convolutional-neural-network
@@ -6,8 +7,9 @@ date: 2019-04-01
 venue: 'Pattern Recognition Letters'
 paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S0167865518303180'
 papertype: 'article'
-wosq: 'Q1'
+wosq: 'Q2'
 impactfactor: '3.255 (2019)'
+abstract: 'The text-independent approach to writer identification does not require the writer to write some predetermined text. Previous research on text-independent writer identification has been based on identifying writer-specific features designed by experts. However, in the last decade, deep learning methods have been successfully applied to learn features from data automatically. We propose here an end-to-end deep-learning method for text-independent writer identification that does not require prior identification of features. A Convolutional Neural Network (CNN) is trained initially to extract local features, which represent characteristics of individual handwriting in the whole character images and their sub-regions. Randomly sampled tuples of images from the training set are used to train the CNN and aggregate the extracted local features of images from the tuples to form global features. For every training epoch, the process of randomly sampling tuples is repeated, which is equivalent to a large number of training patterns being prepared for training the CNN for text-independent writer identification. We conducted experiments on the JEITA-HP database of offline handwritten Japanese character patterns. With 200 characters, our method achieved an accuracy of 99.97{\%} to classify 100 writers. Even when using 50 characters for 100 writers or 100 characters for 400 writers, our method achieved accuracy levels of 92.80{\%} or 93.82{\%}, respectively. We conducted further experiments on the Firemaker and IAM databases of offline handwritten English text. Using only one page per writer to train, our method achieved over 91.81{\%} accuracy to classify 900 writers. Overall, we achieved a better performance than the previously published best result based on handcrafted features and clustering algorithms, which demonstrates the effectiveness of our method for handwritten English text also.'
 citation: ' Hung Nguyen,  Cuong Nguyen,  Takeya Ino,  Bipin Indurkhya,  Masaki Nakagawa, &quot;Text-independent writer identification using convolutional neural network.&quot; Pattern Recognition Letters, 2019.'
 ---
-[Access paper here](https://www.sciencedirect.com/science/article/abs/pii/S0167865518303180){:target="_blank"}
+Access to [paper](https://www.sciencedirect.com/science/article/abs/pii/S0167865518303180){:target="_blank"} [code](https://github.com/ntuanhung/prl2018_win){:target="_blank"}

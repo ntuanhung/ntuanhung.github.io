@@ -1,4 +1,5 @@
 ---
+layout: 'publication'
 title: "ICFHR 2018 – Competition on Vietnamese Online Handwritten Text Recognition using HANDS-VNOnDB (VOHTR2018)"
 collection: publications
 permalink: /publication/2018-08-01-ICFHR-2018-Competition-on-Vietnamese-Online-Handwritten-Text-Recognition-using-HANDS-VNOnDB-VOHTR2018
@@ -8,4 +9,4 @@ paperurl: 'https://ieeexplore.ieee.org/document/8583810/'
 papertype: 'proceedings'
 citation: ' Hung Nguyen,  Cuong Nguyen,  Masaki Nakagawa, &quot;ICFHR 2018 – Competition on Vietnamese Online Handwritten Text Recognition using HANDS-VNOnDB (VOHTR2018).&quot; In: Proceedings of the 16th International Conference on Frontiers in Handwriting Recognition, 2018.'
 ---
-[Access paper here](https://ieeexplore.ieee.org/document/8583810/){:target="_blank"}
+Access to [paper](https://ieeexplore.ieee.org/document/8583810/){:target="_blank"} [data](http://tc11.cvc.uab.es/datasets/HANDS-VNOnDB2018_1){:target="_blank"}
