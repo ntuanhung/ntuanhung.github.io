@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Hung Nguyen's C.V."
+title: "Résumé"
 permalink: /cv/
 author_profile: true
 redirect_from:
