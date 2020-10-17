@@ -8,4 +8,3 @@ date: 2014-07-09
 location: "Tokyo, Japan"
 ---
 
-This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!

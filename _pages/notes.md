@@ -9,6 +9,11 @@ redirect_from:
 
 # Mimimal-mistake notes
 
+## TODO
+
++ Support multiple languages: https://www.sylvaindurand.org/making-jekyll-multilingual/
++ Insert navigation functions
+
 ## Locations of key files/directories
 
 * Basic config options: _config.yml
@@ -149,6 +154,9 @@ Make any link standout more when applying the `.btn` class.
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
 
+## Emoji
+
++ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#symbols
 
 ## HTML Tags
 
@@ -250,3 +258,4 @@ https://www.overleaf.com/learn/latex/Cross%20referencing%20sections,%20equations
 
 ### Bibtex
 + https://www.overleaf.com/learn/latex/bibliography_management_with_bibtex
++ https://www.openoffice.org/bibliographic/bibtex-defs.html

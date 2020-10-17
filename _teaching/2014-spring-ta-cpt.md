@@ -8,13 +8,13 @@ date: 2014-03-01
 location: "Ho Chi Minh City, Vietnam"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+This subject aims to provide the programming techniques in C.
 
-Heading 1
+Basic elements
 ======
 
-Heading 2
+Recursive
 ======
 
-Heading 3
+Dynamic Programming
 ======

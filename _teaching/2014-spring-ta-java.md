@@ -8,13 +8,13 @@ date: 2014-03-01
 location: "Ho Chi Minh City, Vietnam"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Java programming.
 
-Heading 1
+Program Structure
 ======
 
-Heading 2
+OOP-based Paradigm
 ======
 
-Heading 3
+Practice
 ======

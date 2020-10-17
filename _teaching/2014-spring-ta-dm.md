@@ -8,13 +8,13 @@ date: 2014-03-01
 location: "Ho Chi Minh City, Vietnam"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Discrete Mathematics
 
-Heading 1
+Boolean logic
 ======
 
-Heading 2
+Graph
 ======
 
-Heading 3
+Tree
 ======

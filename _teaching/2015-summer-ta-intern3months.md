@@ -8,20 +8,20 @@ date: 2015-10-01
 location: "Tokyo, Japan"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+The 3-month internship students from ASEAN (Thailand, Malaysia, Vietnam) join into our laboratory during summer/spring.
 
 2015
 ======
-
+TBA
 
 2016
 ======
-
+TBA
 
 2017
 ======
-
+TBA
 
 2018
 ======
-
+TBA

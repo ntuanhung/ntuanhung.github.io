@@ -8,13 +8,16 @@ date: 2013-10-01
 location: "Ho Chi Minh City, Vietnam"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+The different datastructures and algorithms are investigated.
 
-Heading 1
+Array and Linked-list structures
 ======
 
-Heading 2
+Graph and Tree-based structures
 ======
 
-Heading 3
+Search algorithms and Complexity
+======
+
+Sort algorithms and Complexity
 ======
