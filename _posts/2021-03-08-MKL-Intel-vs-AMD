@@ -1,0 +1,49 @@
+---
+title: 'MKL: Intel-vs-AMD'
+date: 2021-03-08
+permalink: /posts/2021/03/08/MKL-Intel-vs-AMD/
+tags: ## using this to connect related posts
+  - MKL
+  - Intel
+  - AMD
+  - Computer
+
+layout: single
+author_profile: true
+read_time: true 
+comments: false # disable comment function
+share: true     # disable share to SNS 
+related: false   # disable related posts 
+---
+
+# Boosting Intel MKL on AMD Ryzen processors
+
+Over the weekend I had the time to test a workaround which caught quite a bit of attention when it was first published in November 2019 on Reddit 
+under the title "How to force Matlab to use a fast codepath on AMD Ryzen/TR CPUs" [https://www.reddit.com/r/matlab/comments/dxn38s/howto_force_matlab_to_use_a_fast_codepath_on_amd/]. 
+
+Among MATLAB users it was known for a long time that the underlying Intel Math Kernel Library was optimized for Intel processors and notoriously slow
+on AMD processors, no matter whether the CPU supports efficient SIMD extensions or not. 
+
+For example the linear algebra libraries BLAS and LAPACK are included in the MKL. 
+
+This drawback also known as the “cripple AMD” routine exists for more than 10 years and does also affect NumPy as you can see from the 
+Wikipedia Article for the Math Kernel Library: “However, as long as the master function detects a non-Intel CPU, it almost always chooses the most basic 
+(and slowest) function to use, regardless of what instruction sets the CPU claims to support. 
+This has netted the system a nickname of “cripple AMD” routine since 2009. 
+As of 2019, MKL, which remains the choice of many pre-compiled Mathematical applications on Windows (such as NumPy, SymPy, and MATLAB), 
+still significantly underperforms on AMD CPUs with equivalent instruction sets.” 
+Source: Wikipedia
+
+In other words, while AMD CPUs come with full SSE4, AVX and AVX2 support, software vendors are not obliged to state whether their software 
+that claims to support AVX, AVX2, SSE, or any other SIMD features executes solely on supported Intel CPUs. 
+In the case of the MKL, the library checks the vendor-ID of the CPU and if this does read “AuthenticAMD” rather than “GenuineIntel”, 
+it switches to a standard SSE fallback mode, ignoring the CPUs real capabilities. The workaround consists of merely 4 lines of code in a 
+batch file and it enforces the usage of AVX2 by MKL in MATLAB, no matter what vendor-ID is found. In my tests on a AMD Ryzen 7 3700X CPU 
+I found an overall performance improvement with significantly large gains in individual tests, e.g., >200% for the double precision 
+Cholesky factorization routine. I think this is fantastic news for MATLAB and NumPy users as without the “cripple AMD” routine AMDs 
+Ryzen and Threadripper CPUs offer a very attractive price performance ratio.  
+
+NOTE: Starting with Intel MKL version 2020.0.1 the trick with “MKL_DEBUG_CPU_TYPE=5” for AMD systems no longer works. 
+It may be necessary to link or use an “older” MKL version. I can confirm this – in MKL 2020 update 1, Intel pulled the plug for the debug mode. 
+This is very bad with regard to upcoming Matlab releases which will ship with MKL 2020.0.1 or higher. 
+AMD users of NumPy and TensorFlow should imo rather rely on OpenBLAS anyway. 
