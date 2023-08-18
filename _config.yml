@@ -73,10 +73,11 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  #"google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
+google_analytics: G-SQQWR2FG11
 
 # Site Author
 author:
@@ -88,15 +89,15 @@ author:
                       # He is interested in develop and apply deep neural networks for sequence labeling problems. 
                       # He uses his positive attitude and tireless energy to encourage others to work hard and succeed. 
                       # He is supported daily by his wife Lam. In his free time, he likes to play badminton, trek with friends."
-  location         : "GIR, TUAT at Tokyo, Japan"
+  location         : "TUAT at Tokyo, Japan"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchmap      : "https://researchmap.jp/hung-nguyen"
   googlescholar    : "https://scholar.google.com/citations?user=kSyqDBAAAAAJ&hl=en"
   email            : "ntuanhung@gmail.com"
-  researchgate     : "https://www.researchgate.net/profile/Hung_Nguyen31" # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : "https://www.researchgate.net/profile/Hung-Nguyen-54" # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
-  ieee             : "hungnguyen@ieee.org"
+  ieee             : #"hungnguyen@ieee.org"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -263,7 +264,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Japan/Tokyo # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
